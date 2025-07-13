@@ -23,7 +23,7 @@
 .featured-container .featured-content {
   position: relative;
   overflow: hidden;
-  background: #0D0D0D;
+  background: #0d0d0d;
 }
 
 .featured-container .left .ps,
@@ -82,14 +82,16 @@
   color: #fafafa;
 }
 
-.featured-container .featured-content .text a {
+.featured-container .featured-content .text button {
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   padding-bottom: 2px;
-  border-bottom: 1px solid #fff;
   cursor: pointer;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #ffffff;
 }
 
 .featured-container .right {
@@ -111,4 +113,120 @@
   width: 100%;
   border-radius: 4px;
   min-height: 284px;
+}
+/* 1200px dan pastda */
+@media (max-width: 1200px) {
+  .featured-container {
+    gap: 20px;
+  }
+
+  .featured-container .left .ps img,
+  .featured-container .right .speakers img,
+  .featured-container .right .perfume img {
+    width: 60%;
+  }
+
+  .featured-container .right .collection img {
+    width: 65%;
+  }
+
+  .featured-container .featured-content .text h3 {
+    font-size: 20px;
+  }
+
+  .featured-container .featured-content .text p {
+    font-size: 13px;
+  }
+}
+
+/* 992px dan pastda */
+@media (max-width: 992px) {
+  .featured-container {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-container .right {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-container .right .collection {
+    grid-column: auto;
+  }
+
+  .featured-container .featured-content {
+    padding: 24px;
+  }
+
+  .featured-container .featured-content .text h3 {
+    font-size: 18px;
+  }
+
+  .featured-container .featured-content .text p {
+    font-size: 12px;
+  }
+
+  .featured-container .featured-content .text button {
+    font-size: 14px;
+  }
+}
+
+/* 768px dan pastda */
+@media (max-width: 768px) {
+  .featured .subtitle {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .featured-container .left .ps,
+  .featured-container .right .collection,
+  .featured-container .right .speakers,
+  .featured-container .right .perfume {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .featured-container .featured-content .text {
+    align-items: center;
+  }
+
+  .featured-container .featured-content img {
+    width: 50%;
+  }
+}
+
+/* 576px dan pastda */
+@media (max-width: 576px) {
+  .featured {
+    padding-top: 50px;
+  }
+
+  .featured .subtitle {
+    font-size: 20px;
+  }
+
+  .featured-container {
+    gap: 16px;
+  }
+
+  .featured-container .featured-content {
+    padding: 16px;
+  }
+
+  .featured-container .featured-content .text h3 {
+    font-size: 16px;
+  }
+
+  .featured-container .featured-content .text p {
+    font-size: 12px;
+  }
+
+  .featured-container .featured-content .text button {
+    font-size: 12px;
+  }
+
+  .featured-container .featured-content img {
+    width: 70%;
+    bottom: 0;
+  }
 }

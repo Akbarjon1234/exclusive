@@ -1,0 +1,149 @@
+.category-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.category-products-text {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: #db4444;
+  font-family: "Roboto", sans-serif;
+}
+
+.category-product-card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.category-product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.category-product-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #db4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.category-product-card button:hover {
+  background-color: #b93838;
+}
+
+.caty-page-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.caty-page-icons .caty-eye,
+.caty-page-icons .caty-heart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* 992px dan kichik ekranlar (planshet va kichik laptoplar) */
+@media (max-width: 992px) {
+  .category-products-text {
+    font-size: 32px;
+    padding: 16px;
+  }
+
+  .category-product-card {
+    padding: 14px;
+  }
+
+  .category-product-card img {
+    height: 160px;
+  }
+
+  .category-product-card button {
+    padding: 7px 14px;
+    font-size: 14px;
+  }
+}
+
+/* 768px dan kichik ekranlar (planshet) */
+@media (max-width: 768px) {
+  .category-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .category-products-text {
+    font-size: 26px;
+  }
+
+  .category-product-card img {
+    height: 150px;
+  }
+
+  .category-product-card h4 {
+    font-size: 16px;
+  }
+
+  .category-product-card p {
+    font-size: 15px;
+  }
+
+  .category-product-card button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+/* 576px dan kichik ekranlar (mobil) */
+@media (max-width: 576px) {
+  .category-products-text {
+    font-size: 22px;
+    padding: 12px;
+  }
+
+  .category-products-grid {
+    grid-template-columns: 1fr; /* bitta ustun */
+    gap: 18px;
+  }
+
+  .category-product-card {
+    padding: 12px;
+  }
+
+  .category-product-card img {
+    height: 140px;
+  }
+
+  .category-product-card h4 {
+    font-size: 15px;
+  }
+
+  .category-product-card p {
+    font-size: 14px;
+  }
+
+  .category-product-card button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

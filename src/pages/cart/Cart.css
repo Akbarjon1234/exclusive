@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-.cart-container table thead tr, 
+.cart-container table thead tr,
 .cart-container table tbody tr {
   padding: 24px 40px;
   width: 100%;
@@ -33,7 +33,7 @@
   width: 100%;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
 }
 
@@ -60,11 +60,11 @@
   left: -12px;
   border: none;
   outline: none;
-  background: #DB4444;
+  background: #db4444;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 4px;
   display: flex;
   align-items: center;
@@ -89,10 +89,9 @@
 .cart-container tbody tr .subtotal {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
 }
-
 
 .cart-container tbody tr td .quantity {
   display: inline-flex;
@@ -105,8 +104,8 @@
 .cart-container tbody tr td .quantity span {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
-  color: #000000; 
+  font-family: "Poppins", sans-serif;
+  color: #000000;
 }
 
 .cart-container tbody tr td .quantity-btns {
@@ -128,7 +127,6 @@
   cursor: pointer;
 }
 
-
 .cart-container__links {
   margin-top: 24px;
   width: 100%;
@@ -147,7 +145,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   transition: all 0.3s ease;
 }
@@ -177,7 +175,7 @@
   outline: none;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -186,19 +184,19 @@
 .coupon-code form input::placeholder {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #00000050;
 }
 
 .coupon-code form button {
   padding: 16px 24px;
   border-radius: 4px;
-  background: #DB4444;
+  background: #db4444;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #FAFAFA;
+  color: #fafafa;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -243,7 +241,7 @@
 .cart-total__checkout p span {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
 }
 
@@ -252,13 +250,225 @@
   padding: 16px 48px;
   align-self: center;
   border-radius: 4px;
-  background: #DB4444;
+  background: #db4444;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #FAFAFA;
+  color: #fafafa;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.cart-container__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.return-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.return-link:hover {
+  color: #db4444;
+}
+
+.delete-btn {
+  background-color: #db4444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+.delete-btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal-content h3 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cancel-btn,
+.ok-btn {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #c0c0c0;
+}
+
+.ok-btn {
+  background-color: #db4444;
+  color: white;
+}
+
+.ok-btn:hover {
+  background-color: #b83232;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 960px) {
+  .cart-total {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-left: -50px;
+  }
+
+  .cart-container table thead tr {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-container table thead tr,
+  .cart-container table tbody tr {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .cart-container tbody {
+    gap: 24px;
+  }
+
+  .cart-container tbody tr .img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-container tbody tr .img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart-container tbody tr .img span {
+    font-size: 14px;
+  }
+
+  .cart-container tbody tr .price,
+  .cart-container tbody tr .subtotal {
+    font-size: 14px;
+  }
+
+  .cart-container tbody tr td .quantity {
+    gap: 8px;
+    padding: 4px 10px;
+  }
+
+  .cart-container__links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .cart-container__links a,
+  .cart-container__links button {
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+  }
+
+  .cart-total {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .coupon-code form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .coupon-code form input,
+  .coupon-code form button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .cart-total__checkout {
+    padding: 24px 16px;
+  }
+
+  .cart-total__checkout p span {
+    font-size: 14px;
+  }
+
+  .cart-total__checkout > a {
+    width: 100%;
+    padding: 14px;
+  }
 }

@@ -9,8 +9,8 @@
       "icon": "./assets/computers.png"
     },
     {
-      "name": "SmartWatch",
-      "icon": "./assets/smartwatch.png"
+      "name": "Furniture",
+      "icon": "./assets/furniture.png"
     },
     {
       "name": "Camera",
@@ -22,161 +22,196 @@
     },
     {
       "name": "Gaming",
-      "icon": "./assets/gamepad.png"
+      "icon": "../src/assets/GAMEPAAD.png"
     },
     {
       "name": "Books",
       "icon": "./assets/books.png"
+    },
+    {
+      "name": "Parfume",
+      "icon": "./assets/parfume.png"
+    },
+    {
+      "name": "Apparel & Accessories",
+      "icon": "./assets/cloth.webp"
+    },
+    {
+      "name": "Toys",
+      "icon": "./assets/toys.png"
     }
   ],
 
   "bestProducts": [
     {
       "id": 1,
-      "images": ["./assets/coat.png", "image2", "image3", "image4", "image5"],
+      "images": [
+        "/assets/coat.png",
+        "/assets/coat.png",
+        "/assets/coat.png",
+        "/assets/coat.png"
+      ],
       "name": "The north coat",
       "price": 360,
       "discountPercentage": 27,
       "discountPrice": 260,
-      "stars": 65
+      "stars": 65,
+      "category": "Apparel & Accessories"
     },
     {
       "id": 2,
-      "images": ["./assets/bag.png", "image2", "image3", "image4", "image5"],
+      "images": [
+        "/assets/bag.png",
+        "/assets/bag.png",
+        "/assets/bag.png",
+        "/assets/bag.png"
+      ],
       "name": "Gucci duffle bag",
       "price": 1160,
       "discountPercentage": 27,
       "discountPrice": 960,
-      "stars": 65
+      "stars": 65,
+      "category": "Apparel & Accessories"
     },
     {
       "id": 3,
-      "images": ["./assets/cooler.png", "image2", "image3", "image4", "image5"],
+      "images": [
+        "/assets/cooler.png",
+        "/assets/cooler.png",
+        "/assets/cooler.png",
+        "/assets/cooler.png"
+      ],
       "name": "RGB liquid CPU Cooler",
       "price": 170,
       "discountPercentage": 30,
       "discountPrice": 160,
-      "stars": 65
+      "stars": 65,
+      "category": "gaming"
     },
     {
       "id": 4,
       "images": [
-        "./assets/bookshelf.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/bookshelf.png",
+        "/assets/bookshelf.png",
+        "/assets/bookshelf.png",
+        "/assets/bookshelf.png"
       ],
       "name": "Small BookShelf",
       "price": 460,
       "discountPercentage": 27,
       "discountPrice": 360,
-      "stars": 65
-    },
-    {
-      "id": 5,
-      "images": [
-        "./assets/bookshelf.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
-      ],
-      "name": "Steve Jobs",
-      "price": 12,
-      "discountPercentage": 27,
-      "discountPrice": 9,
-      "stars": 85
+      "stars": 65,
+      "category": "books"
     }
   ],
 
   "flashSales": [
     {
-      "id": 1,
+      "id": 6,
+      "sale": "-40%",
       "images": [
-        "./assets/flashsales/console.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/relatedItems/gamepad.png",
+        "/assets/relatedItems/gamepad.png",
+        "/assets/relatedItems/gamepad.png",
+        "/assets/relatedItems/gamepad.png"
       ],
       "name": "HAVIT HV-G92 Gamepad",
       "price": 160,
       "discountPercentage": 40,
       "discountPrice": 120,
-      "stars": 88
+      "stars": 88,
+      "category": "gaming"
     },
     {
-      "id": 2,
+      "id": 7,
+      "sale": "-35%",
       "images": [
-        "./assets/flashsales/keyboard.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/flashsales/keyboard.png",
+        "/assets/flashsales/keyboard.png",
+        "/assets/flashsales/keyboard.png",
+        "/assets/flashsales/keyboard.png"
       ],
       "name": "AK-900 Wired Keyboard",
       "price": 116,
       "discountPercentage": 35,
       "discountPrice": 96,
-      "stars": 75
+      "stars": 75,
+      "category": "computers"
     },
     {
-      "id": 3,
+      "id": 8,
+      "sale": "-30%",
       "images": [
-        "./assets/flashsales/monitor.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/flashsales/monitor.png",
+        "/assets/flashsales/monitor.png",
+        "/assets/flashsales/monitor.png",
+        "/assets/flashsales/monitor.png"
       ],
       "name": "IPS LCD Gaming Monitor",
       "price": 400,
       "discountPercentage": 30,
       "discountPrice": 370,
-      "stars": 99
+      "stars": 99,
+      "category": "computers"
     },
     {
-      "id": 4,
+      "id": 9,
+      "sale": "-25%",
       "images": [
-        "./assets/flashsales/chair.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/flashsales/chair.png",
+        "/assets/flashsales/chair.png",
+        "/assets/flashsales/chair.png",
+        "/assets/flashsales/chair.png"
       ],
       "name": "S-Series Comfort Chair ",
       "price": 400,
       "discountPercentage": 25,
       "discountPrice": 375,
-      "stars": 99
+      "stars": 99,
+      "category": "furniture"
     },
     {
-      "id": 5,
+      "id": 10,
+      "sale": "-30%",
       "images": [
-        "./assets/flashsales/car.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/flashsales/car.png",
+        "/assets/flashsales/car.png",
+        "/assets/flashsales/car.png",
+        "/assets/flashsales/car.png"
       ],
       "name": "Kids Electric Car",
       "price": 960,
       "discountPercentage": 10,
       "discountPrice": 864,
-      "stars": 65
+      "stars": 65,
+      "category": "toys"
+    },
+    {
+      "id": 226,
+      "sale": "-20%",
+      "images": [
+        "/assets/console-5.png",
+        "/assets/console-1.png",
+        "/assets/console-2.png",
+        "/assets/console-3.png"
+      ],
+      "name": "Havic HV G-92 Gamepad",
+      "price": 200,
+      "discountPercentage": 10,
+      "discountPrice": 192,
+      "stars": 65,
+      "category": "gaming"
     }
   ],
 
   "products": [
     {
-      "id": 1,
+      "id": 11,
       "images": [
-        "./assets/products/item-1.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-1.png",
+        "/assets/products/item-1.png",
+        "/assets/products/item-1.png",
+        "/assets/products/item-1.png"
       ],
       "name": "Breed Dry Dog Food",
       "price": 100,
@@ -185,58 +220,57 @@
       "stars": 35
     },
     {
-      "id": 2,
+      "id": 12,
       "images": [
-        "./assets/products/item-2.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-2.png",
+        "/assets/products/item-2.png",
+        "/assets/products/item-2.png",
+        "/assets/products/item-2.png"
       ],
       "name": "CANON EOS DSLR Camera",
       "price": 360,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 95
+      "stars": 95,
+      "category": "camera"
     },
     {
-      "id": 3,
+      "id": 13,
       "images": [
-        "./assets/products/item-3.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-3.png",
+        "/assets/products/item-3.png",
+        "/assets/products/item-3.png",
+        "/assets/products/item-3.png"
       ],
       "name": "ASUS FHD Gaming Laptop",
       "price": 700,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 325
+      "stars": 325,
+      "category": "computers"
     },
     {
-      "id": 4,
+      "id": 14,
       "images": [
-        "./assets/products/item-4.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-4.png",
+        "/assets/products/item-4.png",
+        "/assets/products/item-4.png",
+        "/assets/products/item-4.png"
       ],
       "name": "Curology Product Set ",
       "price": 500,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 145
+      "stars": 145,
+      "category": "parfume"
     },
     {
-      "id": 5,
+      "id": 15,
       "images": [
-        "./assets/products/item-5.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-5.png",
+        "/assets/products/item-5.png",
+        "/assets/products/item-5.png",
+        "/assets/products/item-5.png"
       ],
       "name": "Kids Electric Car",
       "price": 960,
@@ -245,238 +279,2941 @@
       "stars": 65
     },
     {
-      "id": 6,
+      "id": 16,
       "images": [
-        "./assets/products/item-6.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-6.png",
+        "/assets/products/item-6.png",
+        "/assets/products/item-6.png",
+        "/assets/products/item-6.png"
       ],
       "name": "Jr. Zoom Soccer Cleats",
       "price": 116,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 35
+      "stars": 35,
+      "category": "Apparel & Accessories"
     },
     {
-      "id": 7,
+      "id": 17,
       "images": [
-        "./assets/products/item-7.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-7.png",
+        "/assets/products/item-7.png",
+        "/assets/products/item-7.png",
+        "/assets/products/item-7.png"
       ],
       "name": "GP11 Shooter USB Gamepad",
       "price": 660,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 55
+      "stars": 55,
+      "category": "gaming"
     },
     {
-      "id": 8,
+      "id": 18,
       "images": [
-        "./assets/products/item-8.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/products/item-8.png",
+        "/assets/products/item-8.png",
+        "/assets/products/item-8.png",
+        "/assets/products/item-8.png"
       ],
       "name": "Quilted Satin Jacket",
       "price": 660,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 55
+      "stars": 55,
+      "category": "Apparel & Accessories"
+    },
+    {
+      "id": 31,
+      "images": [
+        "/assets/iphone.jpg",
+        "/assets/iphone.jpg",
+        "/assets/iphone.jpg",
+        "/assets/iphone.jpg"
+      ],
+      "name": "Iphone 14",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 55,
+      "category": "phones"
+    },
+    {
+      "id": 32,
+      "images": [
+        "/assets/samsung.jpg",
+        "/assets/samsung.jpg",
+        "/assets/samsung.jpg",
+        "/assets/samsung.jpg"
+      ],
+      "name": "Samsung Galaxy S24",
+      "price": "500",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 33,
+      "images": [
+        "/assets/iphone15.jpg",
+        "/assets/iphone15.jpg",
+        "/assets/iphone15.jpg",
+        "/assets/iphone15.jpg"
+      ],
+      "name": "Iphone 15 pro max",
+      "price": "800",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 34,
+      "images": [
+        "/assets/samsung1.png",
+        "/assets/samsung1.png",
+        "/assets/samsung1.png",
+        "/assets/samsung1.png"
+      ],
+      "name": "Samsung Galaxy A55",
+      "price": "200",
+      "discountPrice": null,
+      "stars": 40,
+      "category": "phones"
+    },
+    {
+      "id": 35,
+      "images": [
+        "/assets/iphone11.jpg",
+        "/assets/iphone11.jpg",
+        "/assets/iphone11.jpg",
+        "/assets/iphone11.jpg"
+      ],
+      "name": "Iphone 11 pro max",
+      "price": "280",
+      "discountPrice": null,
+      "stars": 77,
+      "category": "phones"
+    },
+    {
+      "id": 36,
+      "images": [
+        "/assets/redmi1.jpg",
+        "/assets/redmi1.jpg",
+        "/assets/redmi1.jpg",
+        "/assets/redmi1.jpg"
+      ],
+      "name": "Redmi Note 12 pro",
+      "price": "150",
+      "discountPrice": null,
+      "stars": 65,
+      "category": "phones"
+    },
+    {
+      "id": 37,
+      "images": [
+        "/assets/iphone16.webp",
+        "/assets/iphone16.webp",
+        "/assets/iphone16.webp",
+        "/assets/iphone16.webp"
+      ],
+      "name": "Iphone 16 pro max",
+      "price": "1200",
+      "discountPrice": null,
+      "stars": 57,
+      "category": "phones"
+    },
+    {
+      "id": 38,
+      "images": [
+        "/assets/iphone12.jpg",
+        "/assets/iphone12.jpg",
+        "/assets/iphone12.jpg",
+        "/assets/iphone12.jpg"
+      ],
+      "name": "Iphone 12 pro max",
+      "price": "370",
+      "discountPrice": null,
+      "stars": 73,
+      "category": "phones"
+    },
+    {
+      "id": 39,
+      "images": [
+        "/assets/samsung2.jpg",
+        "/assets/samsung2.jpg",
+        "/assets/samsung2.jpg",
+        "/assets/samsung2.jpg"
+      ],
+      "name": "Samsung Galaxy S22 Ultra",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 66,
+      "category": "phones"
+    },
+    {
+      "id": 40,
+      "images": [
+        "/assets/samsung3.jpg",
+        "/assets/samsung3.jpg",
+        "/assets/samsung3.jpg",
+        "/assets/samsung3.jpg"
+      ],
+      "name": "Samsung Galaxy S23",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 41,
+      "images": [
+        "/assets/iphone13.webp",
+        "/assets/iphone13.webp",
+        "/assets/iphone13.webp",
+        "/assets/iphone13.webp"
+      ],
+      "name": "Iphone 13 pro",
+      "price": "470",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 42,
+      "images": [
+        "/assets/samsung4.jpg",
+        "/assets/samsung4.jpg",
+        "/assets/samsung4.jpg",
+        "/assets/samsung4.jpg"
+      ],
+      "name": "Samsung Galaxy A32",
+      "price": "200",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 43,
+      "images": [
+        "/assets/honor2.jpg",
+        "/assets/honor2.jpg",
+        "/assets/honor2.jpg",
+        "/assets/honor2.jpg"
+      ],
+      "name": "Honor X8A",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 44,
+      "images": [
+        "/assets/honor1.jpg",
+        "/assets/honor1.jpg",
+        "/assets/honor1.jpg",
+        "/assets/honor1.jpg"
+      ],
+      "name": "Honor X8b",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 45,
+      "images": [
+        "/assets/Infinix1.jpg",
+        "/assets/Infinix1.jpg",
+        "/assets/Infinix1.jpg",
+        "/assets/Infinix1.jpg"
+      ],
+      "name": "Infinix Note 40 pro",
+      "price": "200",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 46,
+      "images": [
+        "/assets/Infinix2.jpg",
+        "/assets/Infinix2.jpg",
+        "/assets/Infinix2.jpg",
+        "/assets/Infinix2.jpg"
+      ],
+      "name": "Infinix Note 40X 5G",
+      "price": "220",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "phones"
+    },
+    {
+      "id": 47,
+      "images": [
+        "/assets/furniture1.webp",
+        "/assets/furniture1.webp",
+        "/assets/furniture1.webp",
+        "/assets/furniture1.webp"
+      ],
+      "name": "Claus Casanova",
+      "price": "1200",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 48,
+      "images": [
+        "/assets/furniture2.webp",
+        "/assets/furniture2.webp",
+        "/assets/furniture2.webp",
+        "/assets/furniture2.webp"
+      ],
+      "name": "Alfa Sky Velvet",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 49,
+      "images": [
+        "/assets/furniture3.webp",
+        "/assets/furniture3.webp",
+        "/assets/furniture3.webp",
+        "/assets/furniture3.webp"
+      ],
+      "name": "Claus Dumont",
+      "price": "1500",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 50,
+      "images": [
+        "/assets/furniture4.webp",
+        "/assets/furniture4.webp",
+        "/assets/furniture4.webp",
+        "/assets/furniture4.webp"
+      ],
+      "name": "Nuage Sky Velvet",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 51,
+      "images": [
+        "/assets/furniture5.webp",
+        "/assets/furniture5.webp",
+        "/assets/furniture5.webp",
+        "/assets/furniture5.webp"
+      ],
+      "name": "Kvina New Sky Velvet",
+      "price": "1000",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 52,
+      "images": [
+        "/assets/furniture6.webp",
+        "/assets/furniture6.webp",
+        "/assets/furniture6.webp",
+        "/assets/furniture6.webp"
+      ],
+      "name": "Krosbi opex Velutto",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 53,
+      "images": [
+        "/assets/furniture7.jpg",
+        "/assets/furniture7.jpg",
+        "/assets/furniture7.jpg",
+        "/assets/furniture7.jpg"
+      ],
+      "name": "China furniture",
+      "price": "1600",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 54,
+      "images": [
+        "/assets/furniture8.webp",
+        "/assets/furniture8.webp",
+        "/assets/furniture8.webp",
+        "/assets/furniture8.webp"
+      ],
+      "name": "DICTAC queen",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 55,
+      "images": [
+        "/assets/furniture9.webp",
+        "/assets/furniture9.webp",
+        "/assets/furniture9.webp",
+        "/assets/furniture9.webp"
+      ],
+      "name": "DICTAC king",
+      "price": "450",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 56,
+      "images": [
+        "/assets/furniture10.webp",
+        "/assets/furniture10.webp",
+        "/assets/furniture10.webp",
+        "/assets/furniture10.webp"
+      ],
+      "name": "Modern Luxury Bed",
+      "price": "4100",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 58,
+      "images": [
+        "/assets/furniture11.webp",
+        "/assets/furniture11.webp",
+        "/assets/furniture11.webp",
+        "/assets/furniture11.webp"
+      ],
+      "name": "Opera I, Dumont",
+      "price": "650",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 59,
+      "images": [
+        "/assets/furniture12.webp",
+        "/assets/furniture12.webp",
+        "/assets/furniture12.webp",
+        "/assets/furniture12.webp"
+      ],
+      "name": "Gramma Light Venge",
+      "price": "650",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 60,
+      "images": [
+        "/assets/furniture13.webp",
+        "/assets/furniture13.webp",
+        "/assets/furniture13.webp",
+        "/assets/furniture13.webp"
+      ],
+      "name": "Monako New Sky Velvet",
+      "price": "1200",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 61,
+      "images": [
+        "/assets/furniture14.webp",
+        "/assets/furniture14.webp",
+        "/assets/furniture14.webp",
+        "/assets/furniture14.webp"
+      ],
+      "name": "Modern Lounge Chair",
+      "price": "700",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 62,
+      "images": [
+        "/assets/furniture15.webp",
+        "/assets/furniture15.webp",
+        "/assets/furniture15.webp",
+        "/assets/furniture15.webp"
+      ],
+      "name": "Curved Sectional Sofa",
+      "price": "900",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "furniture"
+    },
+    {
+      "id": 63,
+      "images": [
+        "/assets/camera1.jpg",
+        "/assets/camera1.jpg",
+        "/assets/camera1.jpg",
+        "/assets/camera1.jpg"
+      ],
+      "name": "Sony Camera",
+      "price": "350",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "camera"
+    },
+    {
+      "id": 64,
+      "images": [
+        "/assets/camera2.jpg",
+        "/assets/camera2.jpg",
+        "/assets/camera2.jpg",
+        "/assets/camera2.jpg"
+      ],
+      "name": "FujiFilm Camera",
+      "price": "250",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "camera"
+    },
+    {
+      "id": 65,
+      "images": [
+        "/assets/camera3.jpg",
+        "/assets/camera3.jpg",
+        "/assets/camera3.jpg",
+        "/assets/camera3.jpg"
+      ],
+      "name": "Nikon Camera",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "camera"
+    },
+    {
+      "id": 66,
+      "images": [
+        "/assets/headphones1.jpg",
+        "/assets/headphones1.jpg",
+        "/assets/headphones1.jpg",
+        "/assets/headphones1.jpg"
+      ],
+      "name": "Beats Studio Pro Wireless Headphones",
+      "price": "100",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 67,
+      "images": [
+        "/assets/headphones2.jpg",
+        "/assets/headphones2.jpg",
+        "/assets/headphones2.jpg",
+        "/assets/headphones2.jpg"
+      ],
+      "name": "Wireless Headphones Bluetooth Style 3 Levender",
+      "price": "120",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 68,
+      "images": [
+        "/assets/headphones3.jpg",
+        "/assets/headphones3.jpg",
+        "/assets/headphones3.jpg",
+        "/assets/headphones3.jpg"
+      ],
+      "name": "SennHeiser Wireles Bluetooth Headphones",
+      "price": "130",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 68,
+      "images": [
+        "/assets/headphones4.jpg",
+        "/assets/headphones4.jpg",
+        "/assets/headphones4.jpg",
+        "/assets/headphones4.jpg"
+      ],
+      "name": "Professional Headphones",
+      "price": "100",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 69,
+      "images": [
+        "/assets/headphones5.jpg",
+        "/assets/headphones5.jpg",
+        "/assets/headphones5.jpg",
+        "/assets/headphones5.jpg"
+      ],
+      "name": "Sony Noice Canceling Wireles Headphones",
+      "price": "150",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 70,
+      "images": [
+        "/assets/headphones6.jpg",
+        "/assets/headphones6.jpg",
+        "/assets/headphones6.jpg",
+        "/assets/headphones6.jpg"
+      ],
+      "name": "AONIC 50 GEN 2 - Wireles Headphones",
+      "price": "130",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 71,
+      "images": [
+        "/assets/headphones7.jpg",
+        "/assets/headphones7.jpg",
+        "/assets/headphones7.jpg",
+        "/assets/headphones7.jpg"
+      ],
+      "name": "JBL Tune 720BT Wireles",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 72,
+      "images": [
+        "/assets/headphones8.jpg",
+        "/assets/headphones8.jpg",
+        "/assets/headphones8.jpg",
+        "/assets/headphones8.jpg"
+      ],
+      "name": "Wireless Headphones",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "headphones"
+    },
+    {
+      "id": 73,
+      "images": [
+        "/assets/gaming1.jpg",
+        "/assets/gaming1.jpg",
+        "/assets/gaming1.jpg",
+        "/assets/gaming1.jpg"
+      ],
+      "name": "Black Gaming Table",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "gaming"
+    },
+    {
+      "id": 74,
+      "images": [
+        "/assets/gaming2.jpg",
+        "/assets/gaming2.jpg",
+        "/assets/gaming2.jpg",
+        "/assets/gaming2.jpg"
+      ],
+      "name": "Razer gaming Accesories",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "gaming"
+    },
+    {
+      "id": 75,
+      "images": [
+        "/assets/gaming3.jpg",
+        "/assets/gaming3.jpg",
+        "/assets/gaming3.jpg",
+        "/assets/gaming3.jpg"
+      ],
+      "name": "Gaming chair",
+      "price": "250",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "gaming"
+    },
+    {
+      "id": 76,
+      "images": [
+        "/assets/gaming4.jpg",
+        "/assets/gaming4.jpg",
+        "/assets/gaming4.jpg",
+        "/assets/gaming4.jpg"
+      ],
+      "name": "Gaming PC, Intel i3",
+      "price": "200",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "gaming"
+    },
+    {
+      "id": 77,
+      "images": [
+        "/assets/gaming5.jpg",
+        "/assets/gaming5.jpg",
+        "/assets/gaming5.jpg",
+        "/assets/gaming5.jpg"
+      ],
+      "name": "Gaming Desktops | PC Gaming | Gaming Laptops",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "gaming"
+    },
+    {
+      "id": 78,
+      "images": [
+        "/assets/parfume1.webp",
+        "/assets/parfume1.webp",
+        "/assets/parfume1.webp",
+        "/assets/parfume1.webp"
+      ],
+      "name": "Tom Ford Parfume",
+      "price": "20",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 79,
+      "images": [
+        "/assets/parfume2.webp",
+        "/assets/parfume2.webp",
+        "/assets/parfume2.webp",
+        "/assets/parfume2.webp"
+      ],
+      "name": "Blue de Chanel Parfume",
+      "price": "20",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 80,
+      "images": [
+        "/assets/parfume3.jpg",
+        "/assets/parfume3.jpg",
+        "/assets/parfume3.jpg",
+        "/assets/parfume3.jpg"
+      ],
+      "name": "Aroma Parfume",
+      "price": "10",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 81,
+      "images": [
+        "/assets/parfume4.jpg",
+        "/assets/parfume4.jpg",
+        "/assets/parfume4.jpg",
+        "/assets/parfume4.jpg"
+      ],
+      "name": "Luxury Parfume for Women",
+      "price": "15",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 82,
+      "images": [
+        "/assets/parfume5.jpg",
+        "/assets/parfume5.jpg",
+        "/assets/parfume5.jpg",
+        "/assets/parfume5.jpg"
+      ],
+      "name": "Jean Paul Parfume",
+      "price": "10",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 83,
+      "images": [
+        "/assets/parfume6.jpg",
+        "/assets/parfume6.jpg",
+        "/assets/parfume6.jpg",
+        "/assets/parfume6.jpg"
+      ],
+      "name": "Lelas parfume",
+      "price": "15",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 84,
+      "images": [
+        "/assets/parfume7.jpg",
+        "/assets/parfume7.jpg",
+        "/assets/parfume7.jpg",
+        "/assets/parfume7.jpg"
+      ],
+      "name": "Le Monarque Parfume",
+      "price": "10",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "parfume"
+    },
+    {
+      "id": 85,
+      "images": [
+        "/assets/clothes1.webp",
+        "/assets/clothes1.webp",
+        "/assets/clothes1.webp",
+        "/assets/clothes1.webp"
+      ],
+      "name": "Thistle Farms",
+      "price": "30",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "Apparel & Accessories"
+    },
+    {
+      "id": 86,
+      "images": [
+        "/assets/clothes2.jpg",
+        "/assets/clothes2.jpg",
+        "/assets/clothes2.jpg",
+        "/assets/clothes2.jpg"
+      ],
+      "name": "Mans hatch",
+      "price": "100",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "Apparel & Accessories"
+    },
+    {
+      "id": 87,
+      "images": [
+        "/assets/clothes3.jpg",
+        "/assets/clothes3.jpg",
+        "/assets/clothes3.jpg",
+        "/assets/clothes3.jpg"
+      ],
+      "name": "Cap",
+      "price": "15",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "Apparel & Accessories"
+    },
+    {
+      "id": 88,
+      "images": [
+        "/assets/clothes4.jpg",
+        "/assets/clothes4.jpg",
+        "/assets/clothes4.jpg",
+        "/assets/clothes4.jpg"
+      ],
+      "name": "Women's Combat Boots",
+      "price": "70",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "Apparel & Accessories"
+    },
+    {
+      "id": 89,
+      "images": [
+        "/assets/toys1.webp",
+        "/assets/toys1.webp",
+        "/assets/toys1.webp",
+        "/assets/toys1.webp"
+      ],
+      "name": "Plane Toy",
+      "price": "35",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 90,
+      "images": [
+        "/assets/toys2.jpg",
+        "/assets/toys2.jpg",
+        "/assets/toys2.jpg",
+        "/assets/toys2.jpg"
+      ],
+      "name": "Ship Toy",
+      "price": "35",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 91,
+      "images": [
+        "/assets/toys3.jpg",
+        "/assets/toys3.jpg",
+        "/assets/toys3.jpg",
+        "/assets/toys3.jpg"
+      ],
+      "name": "Horse Toy",
+      "price": "30",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 92,
+      "images": [
+        "/assets/toys4.jpg",
+        "/assets/toys4.jpg",
+        "/assets/toys4.jpg",
+        "/assets/toys4.jpg"
+      ],
+      "name": "Pinguin Toy",
+      "price": "30",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 93,
+      "images": [
+        "/assets/toys5.jpg",
+        "/assets/toys5.jpg",
+        "/assets/toys5.jpg",
+        "/assets/toys5.jpg"
+      ],
+      "name": "Tiger Toy",
+      "price": "30",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 94,
+      "images": [
+        "/assets/toys6.jpg",
+        "/assets/toys6.jpg",
+        "/assets/toys6.jpg",
+        "/assets/toys6.jpg"
+      ],
+      "name": "Mercedes Benz Toy",
+      "price": "100",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 95,
+      "images": [
+        "/assets/toys7.jpg",
+        "/assets/toys7.jpg",
+        "/assets/toys7.jpg",
+        "/assets/toys7.jpg"
+      ],
+      "name": "Jeep Toy",
+      "price": "100",
+      "discountPrice": null,
+      "stars": 60,
+      "category": "toys"
+    },
+    {
+      "id": 96,
+      "images": [
+        "/assets/books1.jpg",
+        "/assets/books1.jpg",
+        "/assets/books1.jpg",
+        "/assets/books1.jpg"
+      ],
+      "name": "Rosululloh Sallalohu alayhi Vassalam siyratlari",
+      "price": "100",
+      "discountPrice": null,
+      "stars": 20,
+      "category": "books"
+    },
+    {
+      "id": 97,
+      "images": [
+        "/assets/books2.jpg",
+        "/assets/books2.jpg",
+        "/assets/books2.jpg",
+        "/assets/books2.jpg"
+      ],
+      "name": "Mukammal dasturlash",
+      "price": "200",
+      "discountPrice": null,
+      "stars": 10,
+      "category": "books"
+    },
+    {
+      "id": 98,
+      "images": [
+        "/assets/books3.jpg",
+        "/assets/books3.jpg",
+        "/assets/books3.jpg",
+        "/assets/books3.jpg"
+      ],
+      "name": "Vaqtning qadri",
+      "price": "500",
+      "discountPrice": null,
+      "stars": 90,
+      "category": "books"
+    },
+    {
+      "id": 99,
+      "images": [
+        "/assets/books4.webp",
+        "/assets/books4.webp",
+        "/assets/books4.webp",
+        "/assets/books4.webp"
+      ],
+      "name": "Liderlar kitobi",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 20,
+      "category": "books"
+    },
+    {
+      "id": 100,
+      "images": [
+        "/assets/books5.jpg",
+        "/assets/books5.jpg",
+        "/assets/books5.jpg",
+        "/assets/books5.jpg"
+      ],
+      "name": "Sariq devni minib",
+      "price": "50",
+      "discountPrice": null,
+      "stars": 22,
+      "category": "books"
+    },
+    {
+      "id": 101,
+      "images": [
+        "/assets/books6.png",
+        "/assets/books6.png",
+        "/assets/books6.png",
+        "/assets/books6.png"
+      ],
+      "name": "Tasodifga aldanganlar",
+      "price": "344",
+      "discountPrice": null,
+      "stars": 54,
+      "category": "books"
+    },
+    {
+      "id": 102,
+      "images": [
+        "/assets/books7.jpg",
+        "/assets/books7.jpg",
+        "/assets/books7.jpg",
+        "/assets/books7.jpg"
+      ],
+      "name": "As-siyra,An-nabaviyya",
+      "price": "80",
+      "discountPrice": null,
+      "stars": 42,
+      "category": "books"
+    },
+    {
+      "id": 103,
+      "images": [
+        "/assets/books8.jpg",
+        "/assets/books8.jpg",
+        "/assets/books8.jpg",
+        "/assets/books8.jpg"
+      ],
+      "name": "Pythonda dasturlash asoslari",
+      "price": "90",
+      "discountPrice": null,
+      "stars": 33,
+      "category": "books"
+    },
+    {
+      "id": 104,
+      "images": [
+        "/assets/books9.jpg",
+        "/assets/books9.jpg",
+        "/assets/books9.jpg",
+        "/assets/books9.jpg"
+      ],
+      "name": "Muvaffaqiyatli odamlarni 7 ta konikmasi",
+      "price": "50",
+      "discountPrice": null,
+      "stars": 93,
+      "category": "books"
+    },
+    {
+      "id": 105,
+      "images": [
+        "/assets/books10.jpg",
+        "/assets/books10.jpg",
+        "/assets/books10.jpg",
+        "/assets/books10.jpg"
+      ],
+      "name": "Rosululloh Sallalohu alayhi Vassalam siyratlari 2-qism",
+      "price": "90",
+      "discountPrice": null,
+      "stars": 103,
+      "category": "books"
+    },
+    {
+      "id": 106,
+      "images": [
+        "/assets/books11.jpg",
+        "/assets/books11.jpg",
+        "/assets/books11.jpg",
+        "/assets/books11.jpg"
+      ],
+      "name": "Shavqatsiz asr",
+      "price": "20",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "books"
+    },
+    {
+      "id": 107,
+      "images": [
+        "/assets/notebook1.webp",
+        "/assets/notebook1.webp",
+        "/assets/notebook1.webp",
+        "/assets/notebook1.webp"
+      ],
+      "name": "Asus Vivibook Ryzen 5",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 108,
+      "images": [
+        "/assets/notebook2.webp",
+        "/assets/notebook2.webp",
+        "/assets/notebook2.webp",
+        "/assets/notebook2.webp"
+      ],
+      "name": "Asu Tuf Gaming A15",
+      "price": "700",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 109,
+      "images": [
+        "/assets/notebook3.webp",
+        "/assets/notebook3.webp",
+        "/assets/notebook3.webp",
+        "/assets/notebook3.webp"
+      ],
+      "name": "ASUS ROG STRIX SCAR 18",
+      "price": "500",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 110,
+      "images": [
+        "/assets/notebook4.webp",
+        "/assets/notebook4.webp",
+        "/assets/notebook4.webp",
+        "/assets/notebook4.webp"
+      ],
+      "name": "Notebook Asus Core i5",
+      "price": "400",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 111,
+      "images": [
+        "/assets/notebook5.jpg",
+        "/assets/notebook5.jpg",
+        "/assets/notebook5.jpg",
+        "/assets/notebook5.jpg"
+      ],
+      "name": "Asus Notebook Intel Celeron",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 112,
+      "images": [
+        "/assets/notebook6.jpg",
+        "/assets/notebook6.jpg",
+        "/assets/notebook6.jpg",
+        "/assets/notebook6.jpg"
+      ],
+      "name": "Notebook HP 250 G8",
+      "price": "300",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 113,
+      "images": [
+        "/assets/notebook7.jpg",
+        "/assets/notebook7.jpg",
+        "/assets/notebook7.jpg",
+        "/assets/notebook7.jpg"
+      ],
+      "name": "HP EliteBook",
+      "price": "500",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 114,
+      "images": [
+        "/assets/notebook8.jpg",
+        "/assets/notebook8.jpg",
+        "/assets/notebook8.jpg",
+        "/assets/notebook8.jpg"
+      ],
+      "name": "HP Notebook Core i7",
+      "price": "700",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 115,
+      "images": [
+        "/assets/notebook9.webp",
+        "/assets/notebook9.webp",
+        "/assets/notebook9.webp",
+        "/assets/notebook9.webp"
+      ],
+      "name": "HP Envy Core i7",
+      "price": "700",
+      "discountPrice": null,
+      "stars": 11,
+      "category": "computers"
+    },
+    {
+      "id": 116,
+      "images": [
+        "/assets/iphone16.webp",
+        "/assets/iphone16.webp",
+        "/assets/iphone16.webp",
+        "/assets/iphone16.webp"
+      ],
+      "name": "Iphone 16 pro max",
+      "price": 1200,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 117,
+      "images": [
+        "/assets/samsung3.jpg",
+        "/assets/samsung3.jpg",
+        "/assets/samsung3.jpg",
+        "/assets/samsung3.jpg"
+      ],
+      "name": "Samsung Galaxy S23",
+      "price": 400,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 118,
+      "images": [
+        "/assets/honor1.jpg",
+        "/assets/honor1.jpg",
+        "/assets/honor1.jpg",
+        "/assets/honor1.jpg"
+      ],
+      "name": "Honor X8A",
+      "price": 300,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 119,
+      "images": [
+        "/assets/notebook4.webp",
+        "/assets/notebook4.webp",
+        "/assets/notebook4.webp",
+        "/assets/notebook4.webp"
+      ],
+      "name": "Notebook Asus Core i5",
+      "price": 400,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 120,
+      "images": [
+        "/assets/notebook7.jpg",
+        "/assets/notebook7.jpg",
+        "/assets/notebook7.jpg",
+        "/assets/notebook7.jpg"
+      ],
+      "name": "HP EliteBook",
+      "price": 500,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 121,
+      "images": [
+        "/assets/notebook9.webp",
+        "/assets/notebook9.webp",
+        "/assets/notebook9.webp",
+        "/assets/notebook9.webp"
+      ],
+      "name": "HP Envy Core i7",
+      "price": 700,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 122,
+      "images": [
+        "/assets/camera1.jpg",
+        "/assets/camera1.jpg",
+        "/assets/camera1.jpg",
+        "/assets/camera1.jpg"
+      ],
+      "name": "Sony Camera",
+      "price": 350,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 123,
+      "images": [
+        "/assets/camera3.jpg",
+        "/assets/camera3.jpg",
+        "/assets/camera3.jpg",
+        "/assets/camera3.jpg"
+      ],
+      "name": "Nikon Camera",
+      "price": 300,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 124,
+      "images": [
+        "/assets/headphones6.jpg",
+        "/assets/headphones6.jpg",
+        "/assets/headphones6.jpg",
+        "/assets/headphones6.jpg"
+      ],
+      "name": "AONIC 50 GEN 2 - Wireles Headphones",
+      "price": 130,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 125,
+      "images": [
+        "/assets/headphones8.jpg",
+        "/assets/headphones8.jpg",
+        "/assets/headphones8.jpg",
+        "/assets/headphones8.jpg"
+      ],
+      "name": "Wireless Headphones",
+      "price": 300,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 126,
+      "images": [
+        "/assets/gaming1.jpg",
+        "/assets/gaming1.jpg",
+        "/assets/gaming1.jpg",
+        "/assets/gaming1.jpg"
+      ],
+      "name": "Black Gaming Table",
+      "price": 400,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 127,
+      "images": [
+        "/assets/gaming3.jpg",
+        "/assets/gaming3.jpg",
+        "/assets/gaming3.jpg",
+        "/assets/gaming3.jpg"
+      ],
+      "name": "Gaming Chair",
+      "price": 250,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Electronics"
+    },
+    {
+      "id": 128,
+      "images": [
+        "/assets/home&life1.jpg",
+        "/assets/home&life1.jpg",
+        "/assets/home&life1.jpg",
+        "/assets/home&life1.jpg"
+      ],
+      "name": "Wooden Coffee Table",
+      "price": 149,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 129,
+      "images": [
+        "/assets/home&life2.jpg",
+        "/assets/home&life2.jpg",
+        "/assets/home&life2.jpg",
+        "/assets/home&life2.jpg"
+      ],
+      "name": "Modern Sofa Set",
+      "price": 899,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 130,
+      "images": [
+        "/assets/home&life3.jpg",
+        "/assets/home&life3.jpg",
+        "/assets/home&life3.jpg",
+        "/assets/home&life3.jpg"
+      ],
+      "name": "Floor Lamp with LED Light",
+      "price": 89,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 131,
+      "images": [
+        "/assets/home&life4.jpg",
+        "/assets/home&life4.jpg",
+        "/assets/home&life4.jpg",
+        "/assets/home&life4.jpg"
+      ],
+      "name": "Wall Clock (Vintage Design)",
+      "price": 45,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 132,
+      "images": [
+        "/assets/home&life5.webp",
+        "/assets/home&life5.webp",
+        "/assets/home&life5.webp",
+        "/assets/home&life5.webp"
+      ],
+      "name": "Minimalist Bookshelf",
+      "price": 120,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 133,
+      "images": [
+        "/assets/home&life6.jpg",
+        "/assets/home&life6.jpg",
+        "/assets/home&life6.jpg",
+        "/assets/home&life6.jpg"
+      ],
+      "name": "Decorative Throw Pillows",
+      "price": 40,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 134,
+      "images": [
+        "/assets/home&life7.jpg",
+        "/assets/home&life7.jpg",
+        "/assets/home&life7.jpg",
+        "/assets/home&life7.jpg"
+      ],
+      "name": "Scented Candles Set",
+      "price": 25,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 135,
+      "images": [
+        "/assets/home&life8.jpg",
+        "/assets/home&life8.jpg",
+        "/assets/home&life8.jpg",
+        "/assets/home&life8.jpg"
+      ],
+      "name": "Indoor Plant Set (Artificial)",
+      "price": 55,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Home & Lifestyle"
+    },
+    {
+      "id": 136,
+      "images": [
+        "/assets/med1.jpg",
+        "/assets/med1.jpg",
+        "/assets/med1.jpg",
+        "/assets/med1.jpg"
+      ],
+      "name": "Paracetamol 500mg (20 tabs)",
+      "price": 5,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 137,
+      "images": [
+        "/assets/med2.jpg",
+        "/assets/med2.jpg",
+        "/assets/med2.jpg",
+        "/assets/med2.jpg"
+      ],
+      "name": "Vitamin C Tablets (1000mg)",
+      "price": 12,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 138,
+      "images": [
+        "/assets/med3.jpg",
+        "/assets/med3.jpg",
+        "/assets/med3.jpg",
+        "/assets/med3.jpg"
+      ],
+      "name": "Digital Thermometer",
+      "price": 15,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 139,
+      "images": [
+        "/assets/med4.jpg",
+        "/assets/med4.jpg",
+        "/assets/med4.jpg",
+        "/assets/med4.jpg"
+      ],
+      "name": "Antibacterial Hand Sanitizer",
+      "price": 4,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 140,
+      "images": [
+        "/assets/med5.jpg",
+        "/assets/med5.jpg",
+        "/assets/med5.jpg",
+        "/assets/med5.jpg"
+      ],
+      "name": "First Aid Kit (50 items)",
+      "price": 25,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 141,
+      "images": [
+        "/assets/med6.jpg",
+        "/assets/med6.jpg",
+        "/assets/med6.jpg",
+        "/assets/med6.jpg"
+      ],
+      "name": "Blood Pressure Monitor",
+      "price": 39,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 142,
+      "images": [
+        "/assets/med7.jpg",
+        "/assets/med7.jpg",
+        "/assets/med7.jpg",
+        "/assets/med7.jpg"
+      ],
+      "name": "Omega 3 Fish Oil Capsules",
+      "price": 18,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 143,
+      "images": [
+        "/assets/med8.jpg",
+        "/assets/med8.jpg",
+        "/assets/med8.jpg",
+        "/assets/med8.jpg"
+      ],
+      "name": "N95 Face Mask (5-pack)",
+      "price": 10,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Medicine"
+    },
+    {
+      "id": 144,
+      "images": [
+        "/assets/sport&outdor1.jpg",
+        "/assets/sport&outdor1.jpg",
+        "/assets/sport&outdor1.jpg",
+        "/assets/sport&outdor1.jpg"
+      ],
+      "name": "Yoga Mat (Non-Slip)",
+      "price": 25,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 145,
+      "images": [
+        "/assets/sport&outdor2.jpg",
+        "/assets/sport&outdor2.jpg",
+        "/assets/sport&outdor2.jpg",
+        "/assets/sport&outdor2.jpg"
+      ],
+      "name": "Adjustable Dumbbell Set (20kg)",
+      "price": 99,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 146,
+      "images": [
+        "/assets/sport&outdor3.jpg",
+        "/assets/sport&outdor3.jpg",
+        "/assets/sport&outdor3.jpg",
+        "/assets/sport&outdor3.jpg"
+      ],
+      "name": "Mountain Bike Helmet",
+      "price": 35,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 147,
+      "images": [
+        "/assets/sport&outdor4.jpg",
+        "/assets/sport&outdor4.jpg",
+        "/assets/sport&outdor4.jpg",
+        "/assets/sport&outdor4.jpg"
+      ],
+      "name": "Running Shoes (Men/Women)",
+      "price": 89,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 148,
+      "images": [
+        "/assets/sport&outdor5.jpg",
+        "/assets/sport&outdor5.jpg",
+        "/assets/sport&outdor5.jpg",
+        "/assets/sport&outdor5.jpg"
+      ],
+      "name": "Jump Rope (Adjustable)",
+      "price": 10,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 149,
+      "images": [
+        "/assets/sport&outdor6.webp",
+        "/assets/sport&outdor6.webp",
+        "/assets/sport&outdor6.webp",
+        "/assets/sport&outdor6.webp"
+      ],
+      "name": "Inflatable Camping Tent (2-man)",
+      "price": 149,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 150,
+      "images": [
+        "/assets/sport&outdor7.webp",
+        "/assets/sport&outdor7.webp",
+        "/assets/sport&outdor7.webp",
+        "/assets/sport&outdor7.webp"
+      ],
+      "name": "Fitness Tracker (Smart Band)",
+      "price": 45,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 151,
+      "images": [
+        "/assets/sport&outdor8.jpg",
+        "/assets/sport&outdor8.jpg",
+        "/assets/sport&outdor8.jpg",
+        "/assets/sport&outdor8.jpg"
+      ],
+      "name": "Football (Standard Size 5)",
+      "price": 20,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Sports & Outdoor"
+    },
+    {
+      "id": 152,
+      "images": [
+        "/assets/baby&toy1.jpg",
+        "/assets/baby&toy1.jpg",
+        "/assets/baby&toy1.jpg",
+        "/assets/baby&toy1.jpg"
+      ],
+      "name": "Soft Plush Teddy Bear",
+      "price": 18,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 153,
+      "images": [
+        "/assets/baby&toy2.jpg",
+        "/assets/baby&toy2.jpg",
+        "/assets/baby&toy2.jpg",
+        "/assets/baby&toy2.jpg"
+      ],
+      "name": "Baby Diapers (Size M, 40pcs)",
+      "price": 22,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 154,
+      "images": [
+        "/assets/baby&toy3.jpg",
+        "/assets/baby&toy3.jpg",
+        "/assets/baby&toy3.jpg",
+        "/assets/baby&toy3.jpg"
+      ],
+      "name": "Musical Baby Crib Mobile",
+      "price": 35,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 156,
+      "images": [
+        "/assets/baby&toy4.jpg",
+        "/assets/baby&toy4.jpg",
+        "/assets/baby&toy4.jpg",
+        "/assets/baby&toy4.jpg"
+      ],
+      "name": "Baby Feeding Bottle Set (3pcs)",
+      "price": 15,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 157,
+      "images": [
+        "/assets/baby&toy5.jpg",
+        "/assets/baby&toy5.jpg",
+        "/assets/baby&toy5.jpg",
+        "/assets/baby&toy5.jpg"
+      ],
+      "name": "Building Blocks (50pcs)",
+      "price": 25,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 158,
+      "images": [
+        "/assets/baby&toy6.jpg",
+        "/assets/baby&toy6.jpg",
+        "/assets/baby&toy6.jpg",
+        "/assets/baby&toy6.jpg"
+      ],
+      "name": "Baby Stroller (Foldable)",
+      "price": 150,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 159,
+      "images": [
+        "/assets/baby&toy7.jpg",
+        "/assets/baby&toy7.jpg",
+        "/assets/baby&toy7.jpg",
+        "/assets/baby&toy7.jpg"
+      ],
+      "name": "Teething Toy Set (Safe Silicone)",
+      "price": 12,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 160,
+      "images": [
+        "/assets/baby&toy8.jpg",
+        "/assets/baby&toy8.jpg",
+        "/assets/baby&toy8.jpg",
+        "/assets/baby&toy8.jpg"
+      ],
+      "name": "Educational Tablet Toy",
+      "price": 29,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Baby’s & Toys"
+    },
+    {
+      "id": 161,
+      "images": [
+        "/assets/gros&pet1.jpg",
+        "/assets/gros&pet1.jpg",
+        "/assets/gros&pet1.jpg",
+        "/assets/gros&pet1.jpg"
+      ],
+      "name": "Organic Brown Rice (1kg)",
+      "price": 5,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 162,
+      "images": [
+        "/assets/gros&pet2.jpg",
+        "/assets/gros&pet2.jpg",
+        "/assets/gros&pet2.jpg",
+        "/assets/gros&pet2.jpg"
+      ],
+      "name": "Fresh Eggs (12pcs)",
+      "price": 3,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 163,
+      "images": [
+        "/assets/gros&pet3.jpg",
+        "/assets/gros&pet3.jpg",
+        "/assets/gros&pet3.jpg",
+        "/assets/gros&pet3.jpg"
+      ],
+      "name": "Whole Milk (1L)",
+      "price": 2.5,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 164,
+      "images": [
+        "/assets/gros&pet4.jpg",
+        "/assets/gros&pet4.jpg",
+        "/assets/gros&pet4.jpg",
+        "/assets/gros&pet4.jpg"
+      ],
+      "name": "Olive Oil (500ml)",
+      "price": 7,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 165,
+      "images": [
+        "/assets/gros&pet5.jpg",
+        "/assets/gros&pet5.jpg",
+        "/assets/gros&pet5.jpg",
+        "/assets/gros&pet5.jpg"
+      ],
+      "name": "Dry Dog Food (1kg)",
+      "price": 12,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 166,
+      "images": [
+        "/assets/gros&pet6.jpg",
+        "/assets/gros&pet6.jpg",
+        "/assets/gros&pet6.jpg",
+        "/assets/gros&pet6.jpg"
+      ],
+      "name": "Cat Litter (5kg)",
+      "price": 9,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 167,
+      "images": [
+        "/assets/gros&pet7.jpg",
+        "/assets/gros&pet7.jpg",
+        "/assets/gros&pet7.jpg",
+        "/assets/gros&pet7.jpg"
+      ],
+      "name": "Pet Shampoo (Organic)",
+      "price": 6,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 168,
+      "images": [
+        "/assets/gros&pet8.jpg",
+        "/assets/gros&pet8.jpg",
+        "/assets/gros&pet8.jpg",
+        "/assets/gros&pet8.jpg"
+      ],
+      "name": "Dog Chew Toy (Rubber)",
+      "price": 4.5,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Groceries & Pets"
+    },
+    {
+      "id": 169,
+      "images": [
+        "/assets/health&beauty1.jpg",
+        "/assets/health&beauty1.jpg",
+        "/assets/health&beauty1.jpg",
+        "/assets/health&beauty1.jpg"
+      ],
+      "name": "Aloe Vera Face Cream",
+      "price": 8,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 170,
+      "images": [
+        "/assets/health&beauty2.jpg",
+        "/assets/health&beauty2.jpg",
+        "/assets/health&beauty2.jpg",
+        "/assets/health&beauty2.jpg"
+      ],
+      "name": "Whitening Toothpaste (100ml)",
+      "price": 3,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 171,
+      "images": [
+        "/assets/health&beauty3.jpg",
+        "/assets/health&beauty3.jpg",
+        "/assets/health&beauty3.jpg",
+        "/assets/health&beauty3.jpg"
+      ],
+      "name": "Organic Shampoo (400ml)",
+      "price": 6,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 172,
+      "images": [
+        "/assets/health&beauty4.jpg",
+        "/assets/health&beauty4.jpg",
+        "/assets/health&beauty4.jpg",
+        "/assets/health&beauty4.jpg"
+      ],
+      "name": "Vitamin E Capsules (60pcs)",
+      "price": 10,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 173,
+      "images": [
+        "/assets/health&beauty5.jpg",
+        "/assets/health&beauty5.jpg",
+        "/assets/health&beauty5.jpg",
+        "/assets/health&beauty5.jpg"
+      ],
+      "name": "Sunscreen SPF 50 (100ml)",
+      "price": 7,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 174,
+      "images": [
+        "/assets/health&beauty6.jpg",
+        "/assets/health&beauty6.jpg",
+        "/assets/health&beauty6.jpg",
+        "/assets/health&beauty6.jpg"
+      ],
+      "name": "Makeup Brush Set (10pcs)",
+      "price": 15,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 175,
+      "images": [
+        "/assets/health&beauty7.jpg",
+        "/assets/health&beauty7.jpg",
+        "/assets/health&beauty7.jpg",
+        "/assets/health&beauty7.jpg"
+      ],
+      "name": "Face Sheet Mask (Pack of 5)",
+      "price": 5,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 176,
+      "images": [
+        "/assets/health&beauty8.jpg",
+        "/assets/health&beauty8.jpg",
+        "/assets/health&beauty8.jpg",
+        "/assets/health&beauty8.jpg"
+      ],
+      "name": "Lip Balm (Organic Beeswax)",
+      "price": 2,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Health & Beauty"
+    },
+    {
+      "id": 177,
+      "images": [
+        "/assets/men's-hat1.jpg",
+        "/assets/men's-hat1.jpg",
+        "/assets/men's-hat1.jpg",
+        "/assets/men's-hat1.jpg"
+      ],
+      "name": "Classic Baseball Cap",
+      "price": 12,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 178,
+      "images": [
+        "/assets/men's-hat2.jpg",
+        "/assets/men's-hat2.jpg",
+        "/assets/men's-hat2.jpg",
+        "/assets/men's-hat2.jpg"
+      ],
+      "name": "Winter Beanie Hat",
+      "price": 9,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 179,
+      "images": [
+        "/assets/men's-hat3.webp",
+        "/assets/men's-hat3.webp",
+        "/assets/men's-hat3.webp",
+        "/assets/men's-hat3.webp"
+      ],
+      "name": "Cotton Bucket Hat",
+      "price": 11,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 180,
+      "images": [
+        "/assets/men's-hat4.webp",
+        "/assets/men's-hat4.webp",
+        "/assets/men's-hat4.webp",
+        "/assets/men's-hat4.webp"
+      ],
+      "name": "Fedora Wool Hat",
+      "price": 22,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 181,
+      "images": [
+        "/assets/men's-hat5.jpg",
+        "/assets/men's-hat5.jpg",
+        "/assets/men's-hat5.jpg",
+        "/assets/men's-hat5.jpg"
+      ],
+      "name": "Snapback Flat Cap",
+      "price": 14,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 182,
+      "images": [
+        "/assets/men's-hat6.jpg",
+        "/assets/men's-hat6.jpg",
+        "/assets/men's-hat6.jpg",
+        "/assets/men's-hat6.jpg"
+      ],
+      "name": "Straw Beach Hat",
+      "price": 10,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 183,
+      "images": [
+        "/assets/men's-hat7.jpg",
+        "/assets/men's-hat7.jpg",
+        "/assets/men's-hat7.jpg",
+        "/assets/men's-hat7.jpg"
+      ],
+      "name": "Trucker Mesh Hat",
+      "price": 13,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 184,
+      "images": [
+        "/assets/men's-hat8.jpg",
+        "/assets/men's-hat8.jpg",
+        "/assets/men's-hat8.jpg",
+        "/assets/men's-hat8.jpg"
+      ],
+      "name": "Vintage Leather Hat",
+      "price": 18,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Hat"
+    },
+    {
+      "id": 185,
+      "images": [
+        "/assets/men's-T-shirt1.jpg",
+        "/assets/men's-T-shirt1.jpg",
+        "/assets/men's-T-shirt1.jpg",
+        "/assets/men's-T-shirt1.jpg"
+      ],
+      "name": "Cotton White T-Shirt",
+      "price": 15,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 186,
+      "images": [
+        "/assets/men's-T-shirt2.jpg",
+        "/assets/men's-T-shirt2.jpg",
+        "/assets/men's-T-shirt2.jpg",
+        "/assets/men's-T-shirt2.jpg"
+      ],
+      "name": "Graphic Print T-Shirt",
+      "price": 18,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 187,
+      "images": [
+        "/assets/men's-T-shirt3.jpg",
+        "/assets/men's-T-shirt3.jpg",
+        "/assets/men's-T-shirt3.jpg",
+        "/assets/men's-T-shirt3.jpg"
+      ],
+      "name": "V-Neck Black T-Shirt",
+      "price": 17,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 188,
+      "images": [
+        "/assets/men's-T-shirt4.jpg",
+        "/assets/men's-T-shirt4.jpg",
+        "/assets/men's-T-shirt4.jpg",
+        "/assets/men's-T-shirt4.jpg"
+      ],
+      "name": "Oversized Tee (Beige)",
+      "price": 20,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 189,
+      "images": [
+        "/assets/men's-T-shirt5.webp",
+        "/assets/men's-T-shirt5.webp",
+        "/assets/men's-T-shirt5.webp",
+        "/assets/men's-T-shirt5.webp"
+      ],
+      "name": "Polo T-Shirt (Navy)",
+      "price": 22,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 190,
+      "images": [
+        "/assets/men's-T-shirt6.jpg",
+        "/assets/men's-T-shirt6.jpg",
+        "/assets/men's-T-shirt6.jpg",
+        "/assets/men's-T-shirt6.jpg"
+      ],
+      "name": "Stripe Pattern Tee",
+      "price": 16,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 191,
+      "images": [
+        "/assets/men's-T-shirt7.jpg",
+        "/assets/men's-T-shirt7.jpg",
+        "/assets/men's-T-shirt7.jpg",
+        "/assets/men's-T-shirt7.jpg"
+      ],
+      "name": "Long Sleeve Cotton Tee",
+      "price": 19,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 192,
+      "images": [
+        "/assets/men's-T-shirt8.jpg",
+        "/assets/men's-T-shirt8.jpg",
+        "/assets/men's-T-shirt8.jpg",
+        "/assets/men's-T-shirt8.jpg"
+      ],
+      "name": "Gym Fit Performance Tee",
+      "price": 21,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-T-shirt"
+    },
+    {
+      "id": 194,
+      "images": [
+        "/assets/men's-shoes1.webp",
+        "/assets/men's-shoes1.webp",
+        "/assets/men's-shoes1.webp",
+        "/assets/men's-shoes1.webp"
+      ],
+      "name": "White Casual Sneakers",
+      "price": 35,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 195,
+      "images": [
+        "/assets/men's-shoes2.webp",
+        "/assets/men's-shoes2.webp",
+        "/assets/men's-shoes2.webp",
+        "/assets/men's-shoes2.webp"
+      ],
+      "name": "Black Leather Loafers",
+      "price": 55,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 196,
+      "images": [
+        "/assets/men's-shoes3.jpg",
+        "/assets/men's-shoes3.jpg",
+        "/assets/men's-shoes3.jpg",
+        "/assets/men's-shoes3.jpg"
+      ],
+      "name": "Sports Running Shoes",
+      "price": 45,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 197,
+      "images": [
+        "/assets/men's-shoes4.jpg",
+        "/assets/men's-shoes4.jpg",
+        "/assets/men's-shoes4.jpg",
+        "/assets/men's-shoes4.jpg"
+      ],
+      "name": "Suede Desert Boots",
+      "price": 48,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 198,
+      "images": [
+        "/assets/men's-shoes5.jpg",
+        "/assets/men's-shoes5.jpg",
+        "/assets/men's-shoes5.jpg",
+        "/assets/men's-shoes5.jpg"
+      ],
+      "name": "High-top Canvas Sneakers",
+      "price": 32,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 199,
+      "images": [
+        "/assets/men's-shoes6.jpg",
+        "/assets/men's-shoes6.jpg",
+        "/assets/men's-shoes6.jpg",
+        "/assets/men's-shoes6.jpg"
+      ],
+      "name": "Slip-On Lightweight Shoes",
+      "price": 29,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 200,
+      "images": [
+        "/assets/men's-shoes7.jpg",
+        "/assets/men's-shoes7.jpg",
+        "/assets/men's-shoes7.jpg",
+        "/assets/men's-shoes7.jpg"
+      ],
+      "name": "Hiking Trekking Boots",
+      "price": 60,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 201,
+      "images": [
+        "/assets/men's-shoes8.jpg",
+        "/assets/men's-shoes8.jpg",
+        "/assets/men's-shoes8.jpg",
+        "/assets/men's-shoes8.jpg"
+      ],
+      "name": "Oxford Formal Shoes",
+      "price": 68,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Men's-Shoes"
+    },
+    {
+      "id": 202,
+      "images": [
+        "/assets/women's-hat1.jpg",
+        "/assets/women's-hat1.jpg",
+        "/assets/women's-hat1.jpg",
+        "/assets/women's-hat1.jpg"
+      ],
+      "name": "Floppy Sun Hat",
+      "price": 14,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 203,
+      "images": [
+        "/assets/women's-hat2.jpg",
+        "/assets/women's-hat2.jpg",
+        "/assets/women's-hat2.jpg",
+        "/assets/women's-hat2.jpg"
+      ],
+      "name": "Knitted Winter Beanie",
+      "price": 9,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 204,
+      "images": [
+        "/assets/women's-hat3.webp",
+        "/assets/women's-hat3.webp",
+        "/assets/women's-hat3.webp",
+        "/assets/women's-hat3.webp"
+      ],
+      "name": "Fedora Wool Hat (Women)",
+      "price": 19,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 205,
+      "images": [
+        "/assets/women's-hat4.jpg",
+        "/assets/women's-hat4.jpg",
+        "/assets/women's-hat4.jpg",
+        "/assets/women's-hat4.jpg"
+      ],
+      "name": "Straw Boater Hat",
+      "price": 12,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 206,
+      "images": [
+        "/assets/women's-hat5.jpg",
+        "/assets/women's-hat5.jpg",
+        "/assets/women's-hat5.jpg",
+        "/assets/women's-hat5.jpg"
+      ],
+      "name": "Beret (Woolen Paris Style)",
+      "price": 11,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 207,
+      "images": [
+        "/assets/women's-hat6.webp",
+        "/assets/women's-hat6.webp",
+        "/assets/women's-hat6.webp",
+        "/assets/women's-hat6.webp"
+      ],
+      "name": "Bucket Hat (Pastel Colors)",
+      "price": 10,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 208,
+      "images": [
+        "/assets/women's-hat7.jpg",
+        "/assets/women's-hat7.jpg",
+        "/assets/women's-hat7.jpg",
+        "/assets/women's-hat7.jpg"
+      ],
+      "name": "Bucket Hat (Pastel Colors)",
+      "price": 8,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 209,
+      "images": [
+        "/assets/women's-hat8.jpg",
+        "/assets/women's-hat8.jpg",
+        "/assets/women's-hat8.jpg",
+        "/assets/women's-hat8.jpg"
+      ],
+      "name": "Wide-Brim Ruffled Hat",
+      "price": 16,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Hat"
+    },
+    {
+      "id": 210,
+      "images": [
+        "/assets/women's-T-shirt1.jpg",
+        "/assets/women's-T-shirt1.jpg",
+        "/assets/women's-T-shirt1.jpg",
+        "/assets/women's-T-shirt1.jpg"
+      ],
+      "name": "Fitted White Tee",
+      "price": 15,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 211,
+      "images": [
+        "/assets/women's-T-shirt2.jpg",
+        "/assets/women's-T-shirt2.jpg",
+        "/assets/women's-T-shirt2.jpg",
+        "/assets/women's-T-shirt2.jpg"
+      ],
+      "name": "Floral Printed T-Shirt",
+      "price": 18,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 212,
+      "images": [
+        "/assets/women's-T-shirt3.jpg",
+        "/assets/women's-T-shirt3.jpg",
+        "/assets/women's-T-shirt3.jpg",
+        "/assets/women's-T-shirt3.jpg"
+      ],
+      "name": "V-Neck Soft Pink T-Shirt",
+      "price": 16,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 213,
+      "images": [
+        "/assets/women's-T-shirt4.jpg",
+        "/assets/women's-T-shirt4.jpg",
+        "/assets/women's-T-shirt4.jpg",
+        "/assets/women's-T-shirt4.jpg"
+      ],
+      "name": "Oversized Graphic Tee",
+      "price": 19,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 214,
+      "images": [
+        "/assets/women's-T-shirt5.jpg",
+        "/assets/women's-T-shirt5.jpg",
+        "/assets/women's-T-shirt5.jpg",
+        "/assets/women's-T-shirt5.jpg"
+      ],
+      "name": "Crop Top Cotton Tee",
+      "price": 14,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 215,
+      "images": [
+        "/assets/women's-T-shirt6.jpg",
+        "/assets/women's-T-shirt6.jpg",
+        "/assets/women's-T-shirt6.jpg",
+        "/assets/women's-T-shirt6.jpg"
+      ],
+      "name": "Ruffle Sleeve Tee",
+      "price": 20,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 216,
+      "images": [
+        "/assets/women's-T-shirt7.jpg",
+        "/assets/women's-T-shirt7.jpg",
+        "/assets/women's-T-shirt7.jpg",
+        "/assets/women's-T-shirt7.jpg"
+      ],
+      "name": "Striped Color Tee",
+      "price": 17,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 217,
+      "images": [
+        "/assets/women's-T-shirt8.jpg",
+        "/assets/women's-T-shirt8.jpg",
+        "/assets/women's-T-shirt8.jpg",
+        "/assets/women's-T-shirt8.jpg"
+      ],
+      "name": "Round Neck Modal Tee",
+      "price": 16,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-T-shirt"
+    },
+    {
+      "id": 218,
+      "images": [
+        "/assets/women's-shoes1.jpg",
+        "/assets/women's-shoes1.jpg",
+        "/assets/women's-shoes1.jpg",
+        "/assets/women's-shoes1.jpg"
+      ],
+      "name": "White Canvas Sneakers",
+      "price": 32,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 219,
+      "images": [
+        "/assets/women's-shoes2.webp",
+        "/assets/women's-shoes2.webp",
+        "/assets/women's-shoes2.webp",
+        "/assets/women's-shoes2.webp"
+      ],
+      "name": "Ballet Flats (Beige)",
+      "price": 28,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 220,
+      "images": [
+        "/assets/women's-shoes3.jpg",
+        "/assets/women's-shoes3.jpg",
+        "/assets/women's-shoes3.jpg",
+        "/assets/women's-shoes3.jpg"
+      ],
+      "name": "Chunky Heel Sandals",
+      "price": 35,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 221,
+      "images": [
+        "/assets/women's-shoes4.jpg",
+        "/assets/women's-shoes4.jpg",
+        "/assets/women's-shoes4.jpg",
+        "/assets/women's-shoes4.jpg"
+      ],
+      "name": "Running Shoes (Pink/White)",
+      "price": 40,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 222,
+      "images": [
+        "/assets/women's-shoes5.webp",
+        "/assets/women's-shoes5.webp",
+        "/assets/women's-shoes5.webp",
+        "/assets/women's-shoes5.webp"
+      ],
+      "name": "Espadrilles Summer Wedge",
+      "price": 38,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 223,
+      "images": [
+        "/assets/women's-shoes6.webp",
+        "/assets/women's-shoes6.webp",
+        "/assets/women's-shoes6.webp",
+        "/assets/women's-shoes6.webp"
+      ],
+      "name": "Leather Loafers (Women)",
+      "price": 42,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 224,
+      "images": [
+        "/assets/women's-shoes7.jpg",
+        "/assets/women's-shoes7.jpg",
+        "/assets/women's-shoes7.jpg",
+        "/assets/women's-shoes7.jpg"
+      ],
+      "name": "Slip-On Fashion Sneakers",
+      "price": 29,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
+    },
+    {
+      "id": 225,
+      "images": [
+        "/assets/women's-shoes8.jpg",
+        "/assets/women's-shoes8.jpg",
+        "/assets/women's-shoes8.jpg",
+        "/assets/women's-shoes8.jpg"
+      ],
+      "name": "Ankle Boots (Suede)",
+      "price": 50,
+      "discountPrice": null,
+      "stars": 65,
+      "category": "Women's-Shoes"
     }
   ],
 
   "wishlist": [
     {
-      "id": 1,
+      "id": 19,
       "images": [
-        "./assets/wishlist/bag.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/wishlist/bag.png",
+        "/assets/wishlist/bag.png",
+        "/assets/wishlist/bag.png",
+        "/assets/wishlist/bag.png"
       ],
       "name": "Gucci duffle bag",
       "price": 960,
       "discountPercentage": 35,
-      "discountPrice": 1160,
-      "stars": null
+      "discountPrice": null,
+      "stars": null,
+      "category": "Apparel & Accessories"
     },
     {
-      "id": 2,
+      "id": 20,
       "images": [
-        "./assets/wishlist/cooler.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/wishlist/cooler.png",
+        "/assets/wishlist/cooler.png",
+        "/assets/wishlist/cooler.png",
+        "/assets/wishlist/cooler.png"
       ],
       "name": "RGB liquid CPU Cooler",
       "price": 1960,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": null
+      "stars": null,
+      "category": "computers"
     },
     {
-      "id": 3,
+      "id": 21,
       "images": [
-        "./assets/wishlist/gamepad.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/wishlist/gamepad.png",
+        "/assets/wishlist/gamepad.png",
+        "/assets/wishlist/gamepad.png",
+        "/assets/wishlist/gamepad.png"
       ],
       "name": "GP11 Shooter USB Gamepad",
       "price": 550,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": null
+      "stars": null,
+      "category": "gaming"
     },
     {
-      "id": 4,
+      "id": 22,
       "images": [
-        "./assets/wishlist/jacked.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/wishlist/jacked.png",
+        "/assets/wishlist/jacked.png",
+        "/assets/wishlist/jacked.png",
+        "/assets/wishlist/jacked.png"
       ],
       "name": "Quilted Satin Jacket",
       "price": 750,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": null
+      "stars": null,
+      "category": "Apparel & Accessories"
     }
   ],
 
   "recommended": [
     {
-      "id": 1,
+      "id": 23,
       "images": [
-        "./assets/recommended/laptop.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/recommended/laptop.png",
+        "/assets/recommended/laptop.png",
+        "/assets/recommended/laptop.png",
+        "/assets/recommended/laptop.png"
       ],
       "name": "ASUS FHD Gaming Laptop",
       "price": 1160,
       "discountPercentage": 35,
       "discountPrice": 960,
-      "stars": 65
+      "stars": 65,
+      "category": "computers"
     },
     {
-      "id": 2,
+      "id": 24,
       "images": [
-        "./assets/recommended/monitor.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/recommended/monitor.png",
+        "/assets/recommended/monitor.png",
+        "/assets/recommended/monitor.png",
+        "/assets/recommended/monitor.png"
       ],
       "name": "IPS LCD Gaming Monitor",
       "price": 1160,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 65
+      "stars": 65,
+      "category": "computers"
     },
     {
-      "id": 3,
+      "id": 25,
       "images": [
-        "./assets/recommended/gamepad.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/recommended/gamepad.png",
+        "/assets/recommended/gamepad.png",
+        "/assets/recommended/gamepad.png",
+        "/assets/recommended/gamepad.png"
       ],
       "name": "HAVIT HV-G92 Gamepad",
       "price": 560,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 65
+      "stars": 65,
+      "category": "gaming"
     },
     {
-      "id": 4,
+      "id": 27,
       "images": [
-        "./assets/recommended/keyboard.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/recommended/keyboard.png",
+        "/assets/recommended/keyboard.png",
+        "/assets/recommended/keyboard.png",
+        "/assets/recommended/keyboard.png"
       ],
       "name": "AK-900 Wired Keyboard",
       "price": 200,
       "discountPercentage": null,
       "discountPrice": null,
-      "stars": 65
+      "stars": 65,
+      "category": "computers"
     }
   ],
 
-  "reletedItems": [
+  "relatedData": [
     {
-      "id": 1,
+      "id": 27,
+      "sale": "-40%",
       "images": [
-        "./assets/relatedItems/laptop.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
-      ],
-      "name": "ASUS FHD Gaming Laptop",
-      "price": 1160,
-      "discountPercentage": 35,
-      "discountPrice": 960,
-      "stars": 65
-    },
-    {
-      "id": 2,
-      "images": [
-        "./assets/relatedItems/monitor.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
-      ],
-      "name": "IPS LCD Gaming Monitor",
-      "price": 1160,
-      "discountPercentage": null,
-      "discountPrice": null,
-      "stars": 65
-    },
-    {
-      "id": 3,
-      "images": [
-        "./assets/relatedItems/gamepad.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/relatedItems/gamepad.png",
+        "/assets/relatedItems/gamepad.png",
+        "/assets/relatedItems/gamepad.png",
+        "/assets/relatedItems/gamepad.png"
       ],
       "name": "HAVIT HV-G92 Gamepad",
-      "price": 560,
-      "discountPercentage": null,
-      "discountPrice": null,
-      "stars": 65
+      "price": 160,
+      "discountPercentage": 35,
+      "discountPrice": 120,
+      "stars": 88,
+      "category": "gaming"
     },
     {
-      "id": 4,
+      "id": 28,
       "images": [
-        "./assets/relatedItems/keyboard.png",
-        "image2",
-        "image3",
-        "image4",
-        "image5"
+        "/assets/relatedItems/keyboard.png",
+        "/assets/relatedItems/keyboard.png",
+        "/assets/relatedItems/keyboard.png",
+        "/assets/relatedItems/keyboard.png"
       ],
       "name": "AK-900 Wired Keyboard",
-      "price": 200,
+      "price": 1160,
       "discountPercentage": null,
-      "discountPrice": null,
-      "stars": 65
+      "discountPrice": 960,
+      "stars": 75,
+      "category": "computers"
+    },
+    {
+      "id": 29,
+      "images": [
+        "/assets/relatedItems/monitor.png",
+        "/assets/relatedItems/monitor.png",
+        "/assets/relatedItems/monitor.png",
+        "/assets/relatedItems/monitor.png"
+      ],
+      "name": "IPS LCD Gaming Monitor",
+      "price": 400,
+      "discountPercentage": null,
+      "discountPrice": 370,
+      "stars": 99,
+      "category": "computers"
+    },
+    {
+      "id": 30,
+      "images": [
+        "/assets/cooler.png",
+        "/assets/cooler.png",
+        "/assets/cooler.png",
+        "/assets/cooler.png"
+      ],
+      "name": "RGB liquid CPU Cooler",
+      "price": 170,
+      "discountPercentage": null,
+      "discountPrice": 160,
+      "stars": 65,
+      "category": "computers"
     }
   ]
 }

@@ -59,3 +59,54 @@
 .team .worker ul li a:hover {
   color: #000000;
 }
+
+@media (max-width: 992px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .team .worker .img {
+    height: 380px;
+    padding: 30px 40px 0;
+  }
+
+  .team .worker h3 {
+    font-size: 26px;
+  }
+
+  .team .worker p {
+    font-size: 14px;
+  }
+
+  .team .worker ul li a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .team .worker .img {
+    height: 320px;
+    padding: 20px 20px 0;
+  }
+
+  .team .worker h3 {
+    font-size: 22px;
+  }
+
+  .team .worker p {
+    font-size: 13px;
+  }
+
+  .team .worker ul {
+    gap: 12px;
+  }
+
+  .team .worker ul li a {
+    font-size: 18px;
+  }
+}

@@ -1,40 +1,127 @@
-.account {
-  padding-top: 80px;
-  padding-bottom: 140px;
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 100px;
+/* Account.css */
+
+.container.account {
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+  min-height: 70vh;
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
+/* Sidebar */
 .account-sidebar {
-  width: 100%;
+  flex: 0 0 250px;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
 }
 
 .account-sidebar h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
 }
 
 .account-sidebar ul {
   list-style: none;
-  margin-top: 16px;
-  margin-left: 35px;
-  margin-bottom: 24px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.account-sidebar ul li {
+  margin-bottom: 12px;
 }
 
 .account-sidebar ul li a {
   text-decoration: none;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Poppins", sans-serif;
-  color: #000000;
-  opacity: 0.5;
+  color: #555;
+  font-size: 15px;
+  padding: 6px 8px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect on links */
+.account-sidebar ul li a:hover {
+  background-color: #db4444;
+  color: white;
+}
+
+/* Active NavLink style */
 .account-sidebar ul li a.active {
-  color: #DB4444;
-  opacity: 1;
+  background-color: #db4444;
+  color: white;
+  font-weight: 600;
+}
+
+/* Main content container */
+.account-container {
+  flex: 1;
+  padding-left: 20px;
+  min-width: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .container.account {
+    gap: 30px;
+    padding: 30px 15px;
+  }
+
+  .account-sidebar {
+    flex: 0 0 220px;
+    padding-right: 15px;
+  }
+
+  .account-sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .account-sidebar ul li a {
+    font-size: 14px;
+    padding: 5px 7px;
+  }
+
+  .account-container {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container.account {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .account-sidebar {
+    flex: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .account-container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .account-sidebar h3 {
+    font-size: 14px;
+  }
+
+  .account-sidebar ul li a {
+    font-size: 13px;
+    padding: 5px 6px;
+  }
+
+  .container.account {
+    padding: 15px 10px;
+  }
 }

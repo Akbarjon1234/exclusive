@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./BestSellingProduct.css";
-import speakerImg from "../../../assets/month-product.png";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const BestSellingProduct = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -53,29 +54,36 @@ const BestSellingProduct = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleBuyNow = () => {
+  const handleAddToCart = () => {
     const product = {
-      id: 5000,
+      id: 3001,
       name: "Bluetooth Speaker",
-      price: 150,
-      discountPrice: 120,
-      images: ["/src/assets/month-product.png"],
+      price: 99,
+      quantity: 1,
+      images: ["../../../../src/assets/month-product.png"],
     };
 
-    const cart = JSON.parse(localStorage.getItem("localCart")) || [];
+    const cart = JSON.parse(localStorage.getItem("cart")) || [cart];
     const index = cart.findIndex((item) => item.id === product.id);
 
     if (index !== -1) {
       cart[index].quantity += 1;
     } else {
-      cart.push({ ...product, quantity: 1 });
+      cart.push(product);
     }
 
-    localStorage.setItem("localCart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    toast.success(`${product.name} 🛒 savatga qo‘shildi!`, {
+      position: "top-right",
+      autoClose: 2500,
+      theme: "colored",
+    });
   };
 
   return (
     <div className="container">
+      <ToastContainer />
       <div className="month-product">
         <div className="month-product__info">
           <h4>Categories</h4>
@@ -98,10 +106,10 @@ const BestSellingProduct = () => {
               <span>Seconds</span>
             </div>
           </div>
-          <button onClick={handleBuyNow}>Buy Now!</button>
+          <button onClick={handleAddToCart}>Buy Now!</button>
         </div>
         <div className="month-product__img">
-          <img src={speakerImg} alt="speaker" />
+          <img src="../../../../src/assets/month-product.png" alt="speaker" />
         </div>
       </div>
     </div>

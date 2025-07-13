@@ -1,113 +1,161 @@
-import "./Detail.css";
+import { useContext, useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
-import { FaMinus, FaPlus, FaRegHeart } from "react-icons/fa6";
+import { FaMinus, FaPlus, FaRegHeart, FaHeart } from "react-icons/fa6";
 import { TbTruckDelivery } from "react-icons/tb";
 import { GrPowerCycle } from "react-icons/gr";
+import DataContext from "../../context/DataContext";
+import "./Detail.css";
 
 const Detail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { wishlistData, setWishlistData } = useContext(DataContext);
+  const [quantity, setQuantity] = useState(1);
+  const [isWishlisted, setIsWishlisted] = useState(false);
+
+  const product = JSON.parse(localStorage.getItem("singleProduct"));
+  const [selectedImage, setSelectedImage] = useState(
+    product?.images?.[0] || product?.image
+  );
+
+  useEffect(() => {
+    if (product) {
+      const isInWish = wishlistData.data.some((item) => item.id === product.id);
+      setIsWishlisted(isInWish);
+    }
+  }, [wishlistData, product]);
+
+  const increase = () => setQuantity((prev) => prev + 1);
+  const decrease = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+
+  const handleBuyNow = () => {
+    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const index = existingCart.findIndex((item) => item.id === product.id);
+    let updatedCart;
+
+    if (index !== -1) {
+      existingCart[index].quantity += quantity;
+      updatedCart = [...existingCart];
+    } else {
+      updatedCart = [...existingCart, { ...product, quantity }];
+    }
+
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
+  const handleToggleWishlist = () => {
+    const isInWishlist = wishlistData.data.some(
+      (item) => item.id === product.id
+    );
+    let updated;
+    if (isInWishlist) {
+      updated = wishlistData.data.filter((w) => w.id !== product.id);
+    } else {
+      updated = [...wishlistData.data, product];
+    }
+    setWishlistData({ ...wishlistData, data: updated });
+    localStorage.setItem("wishlist", JSON.stringify(updated));
+    setIsWishlisted(!isInWishlist);
+  };
+
+  if (!product) {
+    return <div className="container">Mahsulot topilmadi!</div>;
+  }
+
   return (
     <section className="detail container">
       <div className="detail-images">
         <div className="images-options">
-          <div className="image">
-            <img src="../src/assets/console-1.png" alt="image 1" />
-          </div>
-          <div className="image">
-            <img src="../src/assets/console-2.png" alt="image 2" />
-          </div>
-          <div className="image">
-            <img src="../src/assets/console-3.png" alt="image 3" />
-          </div>
-          <div className="image">
-            <img src="../src/assets/console-4.png" alt="image 4" />
-          </div>
+          {product.images &&
+            product.images.map((img, i) => (
+              <div
+                className={`image ${selectedImage === img ? "active" : ""}`}
+                key={i}
+                onClick={() => setSelectedImage(img)}
+              >
+                <img src={img} alt={`image-${i}`} />
+              </div>
+            ))}
         </div>
         <div className="show-image">
-          <img src="../src/assets/console-5.png" alt="image 5" />
+          <img src={selectedImage} alt="Main product" />
         </div>
       </div>
 
       <div className="detail-info">
-
-        <h2>Havic HV G-92 Gamepad</h2>
+        <h2>{product.name}</h2>
 
         <div className="detail-reviews">
           <div className="stars">
-            <FaStar color="#FFAD33" />
-            <FaStar color="#FFAD33" />
-            <FaStar color="#FFAD33" />
-            <FaStar color="#FFAD33" />
-            <FaStar color="#00000025" />
+            {[...Array(5)].map((_, i) => (
+              <FaStar
+                key={i}
+                color={i < (product.stars || 0) ? "#FFAD33" : "#00000025"}
+              />
+            ))}
           </div>
-          <span>(150 Reviews) |</span>
+          <span>({product.stars || 0} Reviews) |</span>
           <span>In Stock</span>
         </div>
-        
-        <p className="price">$192.00</p>
-        <p className='desc'>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+
+        <p className="price">${product.discountPrice || product.price}</p>
+        <p className="desc">
+          {product.description || "No description available."}
+        </p>
         <div className="line"></div>
 
-        <div className='color'>
+        {/* Color - demo only */}
+        <div className="color">
           <p>Color:</p>
           <label>
-            <input type="radio" name='color' />
-            <span className='cornflowerblue'>
+            <input type="radio" name="color" />
+            <span className="cornflowerblue">
               <span></span>
             </span>
           </label>
           <label>
-            <input type="radio" name='color' />
-            <span className='indianred'>
+            <input type="radio" name="color" />
+            <span className="indianred">
               <span></span>
             </span>
           </label>
         </div>
 
+        {/* Size - demo only */}
         <div className="size">
           <p>Size:</p>
-          <label>
-            <input type="radio" name='size' />
-            <span>XS</span>
-          </label>
-          <label>
-            <input type="radio" name='size' />
-            <span>S</span>
-          </label>
-          <label>
-            <input type="radio" name='size' />
-            <span>M</span>
-          </label>
-          <label>
-            <input type="radio" name='size' />
-            <span>L</span>
-          </label>
-          <label>
-            <input type="radio" name='size' />
-            <span>XL</span>
-          </label>
+          {["XS", "S", "M", "L", "XL"].map((size) => (
+            <label key={size}>
+              <input type="radio" name="size" />
+              <span>{size}</span>
+            </label>
+          ))}
         </div>
 
-        <div className='count-div'>
+        <div className="count-div">
           <div className="count">
-            <button className='dec'>
-              <FaMinus className='icon' />
+            <button className="dec" onClick={decrease}>
+              <FaMinus className="icon" />
             </button>
-            <span>1</span>
-            <button className='inc'>
-              <FaPlus className='icon' />
+            <span>{quantity}</span>
+            <button className="inc" onClick={increase}>
+              <FaPlus className="icon" />
             </button>
           </div>
-          <button className='buynow'>Buy Now</button>
-          <button className='wishlist'>
-            <FaRegHeart className='icon' />
+          <button className="wishlist" onClick={handleToggleWishlist}>
+            {isWishlisted ? <FaHeart color="red" /> : <FaRegHeart />}
+          </button>
+          <button className="buynow" onClick={handleBuyNow}>
+            Buy Now
           </button>
         </div>
 
         <div className="delivery">
-
-          <div className='fast-delivery'>
+          <div className="fast-delivery">
             <div className="icon-div">
-              <TbTruckDelivery className='icon' />
+              <TbTruckDelivery className="icon" />
             </div>
             <div className="info">
               <h3>Free Delivery</h3>
@@ -115,16 +163,15 @@ const Detail = () => {
             </div>
           </div>
 
-          <div className='return-delivery'>
+          <div className="return-delivery">
             <div className="icon-div">
-              <GrPowerCycle className='icon' />
+              <GrPowerCycle className="icon" />
             </div>
             <div className="info">
               <h3>Return Delivery</h3>
               <p>Free 30 Days Delivery Returns. Details</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

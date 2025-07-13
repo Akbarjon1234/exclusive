@@ -1,0 +1,58 @@
+.logout-btn {
+    padding: 10px 16px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .logout-modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .confirm-btn,
+  .cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #5bc0de;
+    color: white;
+  }
+  

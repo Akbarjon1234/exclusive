@@ -1,14 +1,18 @@
 import "./Account.css";
 import { NavLink, Outlet } from "react-router-dom";
+import { useEffect } from "react";
 
 const Account = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="container account">
       <div className="account-sidebar">
         <h3>Manage My Account</h3>
         <ul>
           <li>
-            <NavLink to='profile'>My Profile</NavLink>
+            <NavLink to="profile">My Profile</NavLink>
           </li>
           <li>
             <NavLink to="addressbook">Address Book</NavLink>

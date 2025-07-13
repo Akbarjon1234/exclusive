@@ -21,7 +21,7 @@ const Statistics = () => {
           </div>
         </div>
         <h3 className="count">33k</h3>
-        <p>Mopnthly Produduct Sale</p>
+        <p>Mounthly Product Sale</p>
       </div>
 
       <div className="content">

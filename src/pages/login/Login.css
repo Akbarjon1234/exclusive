@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.login-img img{
+.login-img img {
   width: 100%;
   object-fit: cover;
 }
@@ -64,9 +64,25 @@
   transition: all 0.3s ease;
 }
 
-.login-form .form-group input:focus + label {
-  top: -25%;
-  transform: translateY(0%);
+/* 👁 Ko'zcha joylashuvi */
+.password-group {
+  position: relative;
+}
+
+.toggle-eye {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+.login-form .form-group input:focus + label,
+.login-form .form-group input:not(:placeholder-shown) + label {
+  top: -35%;
+  transform: translateY(50%);
 }
 
 .login-form .form-btns {
@@ -78,8 +94,8 @@
 .login-form .form-btns .login-btn {
   border-radius: 4px;
   padding: 16px 45px;
-  background: #DB4444;
-  color: #FAFAFA;
+  background: #db4444;
+  color: #fafafa;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -90,10 +106,10 @@
 .login-form .form-btns a {
   font-size: 16px;
   line-height: 24px;
-  color: #DB4444;
+  color: #db4444;
 }
 
-.login-form .login-link {
+.login-form .signup-link {
   text-align: center;
   font-size: 16px;
   line-height: 24px;
@@ -101,9 +117,93 @@
   opacity: 0.7;
 }
 
-.login-form .login-link a {
+.login-form .signup-link a {
   margin-left: 16px;
   font-weight: 600;
   color: #000000;
   opacity: 1;
+}
+@media (max-width: 992px) {
+  .login {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 50px;
+  }
+
+  .login-img {
+    order: -1;
+  }
+
+  .login-form h2 {
+    font-size: 30px;
+  }
+
+  .login-form p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .login-form .form-group input {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .login-form .form-group label {
+    font-size: 14px;
+  }
+
+  .login-form .form-btns .login-btn {
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+
+  .login-form .form-btns a {
+    font-size: 15px;
+  }
+
+  .login-form .signup-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login {
+    padding: 30px 20px;
+  }
+
+  .login-form h2 {
+    font-size: 26px;
+  }
+
+  .login-form p {
+    font-size: 14px;
+  }
+
+  .login-form .form-group input {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .login-form .form-group label {
+    font-size: 13px;
+  }
+
+  .login-form .form-btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .login-form .form-btns .login-btn {
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+
+  .login-form .form-btns a {
+    font-size: 14px;
+  }
+
+  .login-form .signup-link {
+    font-size: 14px;
+  }
 }

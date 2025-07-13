@@ -126,3 +126,60 @@
   cursor: pointer;
   align-self: flex-end;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .contact-connect {
+    padding: 30px 20px;
+    gap: 24px;
+  }
+
+  .contact-connect .call-header,
+  .contact-connect .write-header {
+    gap: 12px;
+  }
+
+  .contact-connect .call-header > h3,
+  .contact-connect .write-header > h3 {
+    font-size: 15px;
+  }
+
+  .contact-connect .call > p,
+  .contact-connect .write > p,
+  .contact-connect .call > a,
+  .contact-connect .write > a {
+    font-size: 13px;
+  }
+
+  .contact form {
+    padding: 30px 20px;
+    gap: 24px;
+  }
+
+  .contact form .form-group {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact form .form-group input,
+  .contact form textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .contact form textarea {
+    height: 160px;
+  }
+
+  .contact form button {
+    width: 100%;
+    align-self: center;
+    padding: 14px 0;
+    font-size: 15px;
+  }
+}

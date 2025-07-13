@@ -62,3 +62,91 @@
   text-align: center;
   transition: all 0.3s ease;
 }
+/* 1200px dan pastda - ustunlar orasidagi bo'shliq kamayadi */
+@media (max-width: 1200px) {
+  .services {
+    gap: 60px;
+  }
+
+  .services .content h3 {
+    font-size: 18px;
+  }
+
+  .services .content p {
+    font-size: 13px;
+  }
+}
+
+/* 992px dan pastda - 2 ustunga o‘tadi */
+@media (max-width: 992px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* 768px dan pastda - 1 ustun bo‘lib chiqadi */
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services .content {
+    padding: 20px;
+  }
+
+  .services .content h3 {
+    font-size: 17px;
+  }
+
+  .services .content p {
+    font-size: 12.5px;
+  }
+
+  .services .content .icon-border {
+    width: 50px;
+    height: 50px;
+  }
+
+  .services .content .icon-border img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* 480px dan pastda - kichik telefonlar uchun optimallashtirish */
+@media (max-width: 480px) {
+  .services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+  .services .content h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .services .content p {
+    font-size: 12px;
+  }
+
+  .services .content .icon-div {
+    padding: 8px;
+  }
+
+  .services .content .icon-border {
+    width: 45px;
+    height: 45px;
+  }
+
+  .services .content .icon-border img {
+    width: 28px;
+    height: 28px;
+  }
+}

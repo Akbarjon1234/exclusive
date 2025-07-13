@@ -1,21 +1,24 @@
 import "./Footer.css";
-import {Link} from "react-router-dom"
-// import { LuSendHorizonal } from "react-icons/lu";
+import { Link } from "react-router-dom";
+import { TbSend2 } from "react-icons/tb";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
+
 function Footer() {
   return (
     <footer>
       <div className="footer-container container">
         <div className="footer-subscribe footer-content">
-          <a href='/' className='logo'>Exclusive</a>
+          <a href="/" className="logo">
+            Exclusive
+          </a>
           <h3>Subscribe</h3>
           <p>Get 10% off your first order</p>
           <form>
             <input type="email" placeholder="Enter your email" />
-            {/* <button>
-              <LuSendHorizonal />
-            </button> */}
+            <button>
+              <TbSend2 />
+            </button>
           </form>
         </div>
 
@@ -24,7 +27,9 @@ function Footer() {
 
           <ul>
             <li>
-              <a target="_blank" href="https://www.google.com/maps">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</a>
+              <a target="_blank" href="https://www.google.com/maps">
+                111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+              </a>
             </li>
             <li>
               <a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
@@ -43,7 +48,8 @@ function Footer() {
               <Link to="/account">Account</Link>
             </li>
             <li>
-              <Link to="/login">Login / </Link><Link to="/signup">Register</Link>
+              <Link to="/login">Login / </Link>
+              <Link to="/signup">Register</Link>
             </li>
             <li>
               <Link to="/cart">Cart</Link>
@@ -81,14 +87,14 @@ function Footer() {
           <p>Save $3 with App New User Only</p>
           <div>
             <div className="qrcode">
-              <img src="./src/assets/qrcode.png" alt="QR Code" />
+              <img src="../../../public/assets/qrcode.png" alt="QR Code" />
             </div>
             <div className="app">
               <a href="/">
-                <img src="./src/assets/googleplay.png" alt="Google Play" />
+                <img src="../../../public/assets/googleplay.png" alt="Google Play" />
               </a>
               <a href="/">
-                <img src="./src/assets/appstore.png" alt="App Store" />
+                <img src="../../../public/assets/appstore.png" alt="App Store" />
               </a>
             </div>
           </div>

@@ -1,0 +1,259 @@
+.ourProducts-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ourProducts-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+.ourProducts-header {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.ourProducts-header .ouricon {
+  width: 20px;
+  height: 40px;
+  background-color: #db4444;
+  border-radius: 5px;
+}
+
+.ourProducts-header p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #db4444;
+}
+
+.ourProducts-title h1 {
+  font-family: "Inter";
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 4%;
+  color: rgba(0, 0, 0, 1);
+}
+
+.image {
+  width: 270px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image .our-img {
+  width: 150px;
+}
+
+.image .add-to-cart {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.image:hover .add-to-cart {
+  bottom: 0;
+}
+
+.img-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.img-heart,
+.img-eye {
+  background: white;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.item-words {
+  display: flex;
+  gap: 20px;
+}
+
+.item-words p:nth-child(1) {
+  font-weight: 500;
+  font-size: 16px;
+  color: #db4444;
+}
+
+.item-words p:nth-child(2) {
+  font-size: 16px;
+}
+
+.our-btn-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.our-toggle-btn {
+  background-color: #db4444;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.our-toggle-btn:hover {
+  background-color: #fff;
+  color: #db4444;
+  border: 2px solid #db4444;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* max 1200px */
+@media (max-width: 1200px) {
+  .ourProducts-title h1 {
+    font-size: 32px;
+  }
+
+  .image {
+    width: 100%;
+    height: 240px;
+  }
+
+  .ourProducts-container {
+    gap: 25px;
+    padding: 20px;
+  }
+}
+
+/* max 992px */
+@media (max-width: 992px) {
+  .ourProducts-title h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .ourProducts-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .image {
+    height: 220px;
+  }
+
+  .item-words {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .item-words p {
+    font-size: 14px;
+  }
+}
+
+/* max 768px */
+@media (max-width: 768px) {
+  .ourProducts-header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .ourProducts-title h1 {
+    font-size: 24px;
+  }
+
+  .ourProducts-header p {
+    font-size: 14px;
+  }
+
+  .ourProducts-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 10px;
+    gap: 16px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .item-words p:nth-child(1) {
+    font-size: 14px;
+  }
+
+  .item-words p:nth-child(2) {
+    font-size: 13px;
+  }
+
+  .image .add-to-cart {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* max 576px */
+@media (max-width: 576px) {
+  .ourProducts-title h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .ourProducts-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 22px;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .item-words {
+    gap: 3px;
+  }
+
+  .item-words p {
+    font-size: 12px;
+  }
+
+  .image .add-to-cart {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .img-nav .img-heart,
+  .img-nav .img-eye {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+}

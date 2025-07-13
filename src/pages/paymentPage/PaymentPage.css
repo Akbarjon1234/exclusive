@@ -1,0 +1,90 @@
+.payment-page {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.payment-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Kartalar ro'yxati */
+.card-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-bottom: 30px;
+}
+
+/* Har bir karta */
+.card-preview {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
+}
+
+.card-preview:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-chip {
+  width: 50px;
+  height: 35px;
+  background: silver;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.card-number {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card-expiry {
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.card-nt {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.card-name,
+.card-type {
+  font-size: 14px;
+}
+
+/* Tanlangan kartaga border qo'yish */
+.active-card {
+  border: 2px solid #00ffae;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+/* Umumiy summasi */
+.summary-box {
+  text-align: center;
+}
+
+.pay-btn {
+  background: #2ecc71;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}

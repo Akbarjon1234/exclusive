@@ -25,16 +25,16 @@ footer {
   line-height: 24px;
   letter-spacing: 3%;
   font-weight: bold;
-  font-family: 'Inter', sans-serif;
-  color: #FAFAFA;
+  font-family: "Inter", sans-serif;
+  color: #fafafa;
   margin-bottom: 24px;
 }
 
 .footer-content h3 {
   font-size: 20px;
   line-height: 28px;
-  font-family: 'Poppins', sans-serif;
-  color: #FAFAFA;
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
   font-weight: 600;
   margin-bottom: 24px;
 }
@@ -42,8 +42,8 @@ footer {
 .footer-subscribe p {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
-  color: #FAFAFA;
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
 }
 
 .footer-subscribe form {
@@ -55,7 +55,7 @@ footer {
   justify-content: space-between;
   gap: 10px;
   background: transparent;
-  border: 1.5px solid #FAFAFA;
+  border: 1.5px solid #fafafa;
   border-radius: 4px;
 }
 
@@ -66,9 +66,8 @@ footer {
   font-size: 16px;
   line-height: 24px;
   width: 150px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
-
 
 .footer-subscribe form button {
   border: none;
@@ -76,7 +75,7 @@ footer {
   cursor: pointer;
   background: none;
   font-size: 24px;
-  color: #FAFAFA;
+  color: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,8 +92,8 @@ footer {
 .footer-content ul li a {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
-  color: #FAFAFA;
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
   transition: color 0.3s ease;
   text-transform: capitalize;
 }
@@ -102,7 +101,7 @@ footer {
 .footer-download > p {
   font-size: 12px;
   line-height: 18px;
-  color: #FAFAFA;
+  color: #fafafa;
   opacity: 0.7;
   text-transform: capitalize;
   margin-bottom: 8px;
@@ -142,7 +141,6 @@ footer {
   width: 100%;
 }
 
-
 .footer-download > ul {
   margin-top: 24px;
   list-style: none;
@@ -153,7 +151,7 @@ footer {
 }
 
 .footer-download > ul li a {
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 24px;
 }
 
@@ -168,5 +166,119 @@ footer {
 .footer-copyright p {
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF40;
+  color: #ffffff40;
+}
+/* 1200px dan pastda — bo'shliq kamayadi */
+@media (max-width: 1200px) {
+  .footer-container {
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 992px dan pastda — 2 ustunga tushadi */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-download > div {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-download > div .app {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-download > div .app a img {
+    width: 80%;
+  }
+}
+
+/* 768px dan pastda — 1 ustun va shriftlar kichiklashadi */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .footer-content h3 {
+    font-size: 18px;
+  }
+
+  .footer-content ul li a,
+  .footer-subscribe p,
+  .footer-subscribe form input {
+    font-size: 14px;
+  }
+
+  .footer-subscribe form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .footer-subscribe form input {
+    width: 100%;
+  }
+
+  .footer-subscribe form button {
+    align-self: flex-end;
+  }
+
+  .footer-download > ul {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer-download > div .qrcode img {
+    width: 80px; 
+    height: auto;
+  }
+
+  .footer-download > div .app {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-download > div .app a img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-subscribe .logo {
+    font-size: 20px;
+  }
+
+  .footer-content h3 {
+    font-size: 16px;
+  }
+
+  .footer-content ul li a,
+  .footer-subscribe p {
+    font-size: 13px;
+  }
+
+  .footer-subscribe form input {
+    font-size: 13px;
+  }
+
+  .footer-download > p {
+    font-size: 11px;
+  }
+
+  .footer-download > ul li a {
+    font-size: 20px;
+  }
+
+  .footer-copyright p {
+    font-size: 13px;
+    text-align: center;
+    padding: 0 10px;
+  }
 }

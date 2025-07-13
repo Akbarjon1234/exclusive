@@ -1,29 +1,36 @@
 import "./Featured.css";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // import images
-import psImg from "../../assets/ps.png";
-import collectionImg from "../../assets/collection.png";
-import speakersImg from "../../assets/speakers.png";
-import perfumeImg from "../../assets/perfume.png";
+import psImg from "../../../src/assets/ps.png";
+import collectionImg from "../../../src/assets/collection.png";
+import speakersImg from "../../../src/assets/speakers.png";
+import perfumeImg from "../../../src/assets/perfume.png";
 
 const Featured = () => {
-
-  const addToCart = (product) => {
-    const cart = JSON.parse(localStorage.getItem("localCart")) || [];
+  const handleAddToCart = (product) => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const index = cart.findIndex((item) => item.id === product.id);
 
     if (index !== -1) {
       cart[index].quantity += 1;
     } else {
-      cart.push({ ...product, quantity: 1 });
+      cart.push(product);
     }
 
-    localStorage.setItem("localCart", JSON.stringify(cart));
-    alert("Mahsulot Cartga joylandi!")
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    toast.success(`${product.name} 🛒 savatga qo‘shildi!`, {
+      position: "top-right",
+      autoClose: 2500,
+      theme: "colored",
+    });
   };
 
   return (
     <section className="featured container">
+      <ToastContainer />
       <h3 className="title">
         <span></span> Featured
       </h3>
@@ -39,87 +46,87 @@ const Featured = () => {
                 Black and White version of the PS5 <br />
                 coming out on sale.
               </p>
-              <a
+              <button
                 onClick={() =>
-                  addToCart({
-                    id: 9001,
+                  handleAddToCart({
+                    id: 2001,
                     name: "PlayStation 5",
-                    price: 499,
-                    discountPrice: 449,
+                    price: 650,
+                    quantity: 1,
                     images: [psImg],
                   })
                 }
               >
                 Shop Now
-              </a>
+              </button>
             </div>
           </div>
         </div>
 
         <div className="right">
           <div className="featured-content collection">
-            <img src={collectionImg} alt="women's collection" />
+            <img src={collectionImg} alt="Women's Collection" />
             <div className="text">
               <h3>Women’s Collections</h3>
               <p>
                 Featured woman collections that give <br />
                 you another vibe.
               </p>
-              <a
+              <button
                 onClick={() =>
-                  addToCart({
-                    id: 9002,
+                  handleAddToCart({
+                    id: 2002,
                     name: "Women’s Collection",
-                    price: 120,
-                    discountPrice: 99,
+                    price: 320,
+                    quantity: 1,
                     images: [collectionImg],
                   })
                 }
               >
                 Shop Now
-              </a>
+              </button>
             </div>
           </div>
 
           <div className="featured-content speakers">
-            <img src={speakersImg} alt="speakers" />
+            <img src={speakersImg} alt="Speakers" />
             <div className="text">
               <h3>Speakers</h3>
               <p>Amazon wireless speakers</p>
-              <a
+              <button
                 onClick={() =>
-                  addToCart({
-                    id: 9003,
-                    name: "Wireless Speakers",
-                    price: 89,
-                    discountPrice: 75,
+                  handleAddToCart({
+                    id: 2003,
+                    name: "Speakers",
+                    price: 180,
+                    quantity: 1,
                     images: [speakersImg],
                   })
                 }
               >
                 Shop Now
-              </a>
+              </button>
             </div>
           </div>
 
           <div className="featured-content perfume">
-            <img src={perfumeImg} alt="perfume" />
+            <img src={perfumeImg} alt="Perfume" />
             <div className="text">
               <h3>Perfume</h3>
               <p>GUCCI INTENSE OUD EDP</p>
-              <a
+              <button
                 onClick={() =>
-                  addToCart({
-                    id: 9004,
-                    name: "GUCCI Perfume",
-                    price: 210,
-                    discountPrice: 180,
+                  handleAddToCart({
+                    id: 2004,
+                    name: "Gucci Perfume",
+                    price: 140,
+                    quantity: 1,
                     images: [perfumeImg],
                   })
                 }
               >
                 Shop Now
-              </a>
+              </button>
             </div>
           </div>
         </div>
