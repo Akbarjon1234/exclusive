@@ -1,13 +1,15 @@
 .swiper {
-  width: 600px;
-  height: 500px;
-  background: red;
+  width: 890px;
+  height: 350px;
+  background: white;
+  margin: 20px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #000;
+  color: #fff;
 
   /* Center slide text vertically */
   display: flex;
@@ -15,9 +17,38 @@
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.swiper-text{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.swiper-text h1{
+  font-size: 48px;
+  text-align: start;
+}
+
+.swiper-text .shop-now{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.swiper-text .shop-now a{
+  color: #fff;
+  border-bottom: 2px solid white;
+}
+
+.swiper-text .iphone{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.swiper-slide .swiper-img img {
   object-fit: cover;
+  display: flex;
+  /* margin-left: 100px; */
 }

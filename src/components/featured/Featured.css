@@ -89,6 +89,7 @@
   color: #ffffff;
   padding-bottom: 2px;
   border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 
 .featured-container .right {

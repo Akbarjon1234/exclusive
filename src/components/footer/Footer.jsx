@@ -1,6 +1,6 @@
 import "./Footer.css";
 import {Link} from "react-router-dom"
-import { LuSendHorizonal } from "react-icons/lu";
+// import { LuSendHorizonal } from "react-icons/lu";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 function Footer() {
@@ -13,9 +13,9 @@ function Footer() {
           <p>Get 10% off your first order</p>
           <form>
             <input type="email" placeholder="Enter your email" />
-            <button>
+            {/* <button>
               <LuSendHorizonal />
-            </button>
+            </button> */}
           </form>
         </div>
 
@@ -52,7 +52,7 @@ function Footer() {
               <Link to="/wishlist">Wishlist</Link>
             </li>
             <li>
-              <Link to="/shop">Shop</Link>
+              <Link to="/">Shop</Link>
             </li>
           </ul>
         </div>
@@ -71,7 +71,7 @@ function Footer() {
               <a href="/">FAQ</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -118,7 +118,7 @@ function Footer() {
       </div>
 
       <div className="footer-copyright">
-        <p>&copy; Copyright Azimjon King 2024. All right reserved</p>
+        <p>&copy; Copyright Akbarjon Ilhamov 2024. All right reserved</p>
       </div>
     </footer>
   );

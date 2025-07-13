@@ -15,12 +15,12 @@ const Login = () => {
           <label htmlFor="email">Email or Phone Number</label>
         </div>
         <div className="form-group">
-          <input type="password" id="password" />
+          <input type="password" id="password" y/>
           <label htmlFor="password">Password</label>
         </div>
         <div className="form-btns">
           <button className="login-btn">Log in</button>
-          <Link to="/forgetpassword">Forget Password?</Link>
+          <Link to="/signup">Forget Password?</Link>
         </div>
         <p className="signup-link">
           Don't you have an account? <Link to="/signup">Sign Up</Link>
