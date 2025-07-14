@@ -12,6 +12,36 @@
   color: #222;
 }
 
+.no-card-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.no-card-box p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.add-card-btn {
+  background: #db4444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-card-btn:hover {
+  background: #c63838;
+}
+
 /* Kartalar ro'yxati */
 .card-list {
   display: grid;

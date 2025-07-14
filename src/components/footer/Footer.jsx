@@ -91,10 +91,10 @@ function Footer() {
             </div>
             <div className="app">
               <a href="/">
-                <img src="../../../public/assets/googleplay.png" alt="Google Play" />
+                <img src="/assets/googleplay.png" alt="Google Play" />
               </a>
               <a href="/">
-                <img src="../../../public/assets/appstore.png" alt="App Store" />
+                <img src="/assets/appstore.png" alt="App Store" />
               </a>
             </div>
           </div>

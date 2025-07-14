@@ -161,7 +161,9 @@ function App() {
         { path: "login", element: <Login /> },
         { path: "signUp", element: <UserList /> },
         { path: "profile", element: <ProfileEdit /> },
-        {path: "/payment", element: <PaymentPage />},
+        { path: "/payment", element: <PaymentPage /> },
+
+        { path: "mypayment", element: <MyPayment /> },
         {
           path: "wishlist",
           element: <Wishlist recommendedData={recommendedData} />,

@@ -35,8 +35,8 @@ const PaymentPage = () => {
     msg += `👤 Ism: ${form.firstname}\n📧 Email: ${form.email}\n📞 Tel: ${form.phone}\n`;
     msg += `🏠 Manzil: ${form.street}, ${form.city}\n`;
     msg += `💳 To‘lov turi: ${paymentMethod} (${selectedCard.cardType} - ${selectedCard.name})\n\n`;
-
     msg += `📦 Mahsulotlar:\n`;
+
     cartItems.forEach((item, i) => {
       msg += `${i + 1}) ${item.name} - $${item.price} x ${item.quantity}\n`;
     });
@@ -79,6 +79,18 @@ const PaymentPage = () => {
     <div className="payment-page container">
       <ToastContainer />
       <h2>To‘lov Sahifasi</h2>
+
+      {userCards.length === 0 && (
+        <div className="no-card-box">
+          <p>Hech qanday karta topilmadi.</p>
+          <button
+            className="add-card-btn"
+            onClick={() => navigate("/mypayment")}
+          >
+            Karta qo‘shish
+          </button>
+        </div>
+      )}
 
       <div className="card-list">
         {userCards.map((card, index) => (
