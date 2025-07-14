@@ -8,8 +8,8 @@ import {
 } from "firebase/auth";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { auth, provider, db } from "../../fireBase";
-import signupImg from "../../assets/signup.png";
-import googleIcon from "../../assets/icon-google.png";
+import signupImg from "/assets/signup.png";
+import googleIcon from "/assets/icon-google.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // 👁‍🗨 iconlar
 
 const Signup = () => {

@@ -147,7 +147,7 @@
     font-size: 30px;
   }
 
-  .p-text{
+  .p-text {
     padding-top: 80px;
   }
 
@@ -223,5 +223,78 @@
     grid-template-columns: repeat(1, 1fr);
     /* padding: 0 15px; */
     padding-left: 80px;
+  }
+}
+@media (max-width: 340px) {
+  .nav-text h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .nav-text p {
+    font-size: 14px;
+  }
+
+  .section-header {
+    padding: 0 10px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-header button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 150px;
+    margin-right: -50px;
+  }
+
+  .p-text {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .p-icon {
+    width: 10px;
+    height: 30px;
+  }
+
+  .container-month {
+    flex-direction: column;
+    padding: 15px 8px;
+    gap: 15px;
+  }
+
+  .container-month .product {
+    width: 100%;
+    max-width: 200px;
+    font-size: 13px;
+  }
+
+  .container-month .image {
+    width: 100%;
+    max-width: 180px;
+    height: 160px;
+  }
+
+  .container-month .image img {
+    width: 100px;
+  }
+
+  .extra-products {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 30px;
+    gap: 15px;
+  }
+
+  .month-price {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .product p.stars {
+    font-size: 12px;
   }
 }

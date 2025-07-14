@@ -9,7 +9,7 @@ const OurStory = () => {
         <p>Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging  from consumer.</p>
       </div>
       <div className="ourStory-img">
-        <img src="./src/assets/about.png" alt="Our Story Image" />
+        <img src="/assets/about.png" alt="Our Story Image" />
       </div>
     </div>
   );

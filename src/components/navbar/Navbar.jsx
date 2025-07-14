@@ -86,101 +86,103 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar container">
-      <div className="navbar-top">
-        <Link to="/" className="logo">
-          Exclusive
-        </Link>
-        <button
-          className="menu-toggle"
-          onClick={() => setShowMenu(!showMenu)}
-          aria-label="Toggle menu"
-        >
-          {showMenu ? <FiX size={24} /> : <FiMenu size={24} />}
-        </button>
-      </div>
-
-      <nav>
-        <ul className={showMenu ? "active" : ""}>
-          <li>
-            <NavLink to="/" onClick={() => setShowMenu(false)}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" onClick={() => setShowMenu(false)}>
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" onClick={() => setShowMenu(false)}>
-              About
-            </NavLink>
-          </li>
-          {!user && (
-            <li>
-              <NavLink to="/signup" onClick={() => setShowMenu(false)}>
-                Sign Up
-              </NavLink>
-            </li>
-          )}
-        </ul>
-      </nav>
-
-      <div className="navbar-btns">
-        <div className="navbar-search">
-          <input
-            type="text"
-            placeholder="What are you looking for?"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <button>
-            <FiSearch />
+    <>
+      <div className="navbar container">
+        <div className="navbar-top">
+          <Link to="/" className="logo">
+            Exclusive
+          </Link>
+          <button
+            className="menu-toggle"
+            onClick={() => setShowMenu(!showMenu)}
+            aria-label="Toggle menu"
+          >
+            {showMenu ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
-          {searchTerm && searchResults.length > 0 && (
-            <ul className="search-results">
-              {searchResults.slice(0, 5).map((item) => (
-                <li key={item.id}>
-                  <Link
-                    to={`/product/${item.id}`}
-                    onClick={() => setSearchTerm("")}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
         </div>
 
-        <Link to="/wishlist" className="icon-wrapper" aria-label="Wishlist">
-          <FaRegHeart />
-          {wishlistCount > 0 && (
-            <span className="icon-badge">{wishlistCount}</span>
-          )}
-        </Link>
+        <nav>
+          <ul className={showMenu ? "active" : ""}>
+            <li>
+              <NavLink to="/" onClick={() => setShowMenu(false)}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" onClick={() => setShowMenu(false)}>
+                Contact
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" onClick={() => setShowMenu(false)}>
+                About
+              </NavLink>
+            </li>
+            {!user && (
+              <li>
+                <NavLink to="/signup" onClick={() => setShowMenu(false)}>
+                  Sign Up
+                </NavLink>
+              </li>
+            )}
+          </ul>
+        </nav>
 
-        <Link to="/cart" className="icon-wrapper" aria-label="Cart">
-          <IoCartOutline />
-          {localCartCount > 0 && (
-            <span className="icon-badge">{localCartCount}</span>
-          )}
-        </Link>
-
-        {user && (
-          <>
-            <Link to="/account" className="icon-user" aria-label="Account">
-              <FaRegUser />
-            </Link>
-            <button
-              className="logout-btn"
-              onClick={() => setShowLogoutModal(true)}
-            >
-              Log Out
+        <div className="navbar-btns fixed-bottom-panel">
+          <div className="navbar-search">
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <button>
+              <FiSearch />
             </button>
-          </>
-        )}
+            {searchTerm && searchResults.length > 0 && (
+              <ul className="search-results">
+                {searchResults.slice(0, 5).map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      to={`/product/${item.id}`}
+                      onClick={() => setSearchTerm("")}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <Link to="/wishlist" className="icon-wrapper" aria-label="Wishlist">
+            <FaRegHeart />
+            {wishlistCount > 0 && (
+              <span className="icon-badge">{wishlistCount}</span>
+            )}
+          </Link>
+
+          <Link to="/cart" className="icon-wrapper" aria-label="Cart">
+            <IoCartOutline />
+            {localCartCount > 0 && (
+              <span className="icon-badge">{localCartCount}</span>
+            )}
+          </Link>
+
+          {user ? (
+            <>
+              <Link to="/account" className="icon-user" aria-label="Account">
+                <FaRegUser />
+              </Link>
+              <button
+                className="logout-btn"
+                onClick={() => setShowLogoutModal(true)}
+              >
+                Log Out
+              </button>
+            </>
+          ) : null}
+        </div>
       </div>
 
       {showLogoutModal && (
@@ -201,7 +203,7 @@ function Navbar() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

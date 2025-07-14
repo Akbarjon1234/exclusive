@@ -183,7 +183,7 @@ const MainSection = () => {
                       name: "PlayStation 5",
                       price: 300,
                       quantity: 1,
-                      images: ["/src/assets/ps.png"],
+                      images: ["/assets/ps.png"],
                     })
                   }
                 >
@@ -193,7 +193,7 @@ const MainSection = () => {
               </div>
             </div>
             <div className="lenovo-img">
-              <img src="/src/assets/ps.png" alt="PS" />
+              <img src="/assets/ps.png" alt="PS" />
             </div>
           </SwiperSlide>
 
@@ -215,7 +215,7 @@ const MainSection = () => {
                       name: "Cucci Perfume",
                       price: 100,
                       quantity: 1,
-                      images: ["/src/assets/perfume.png"],
+                      images: ["/assets/perfume.png"],
                       category: "toys",
                     })
                   }
@@ -226,7 +226,7 @@ const MainSection = () => {
               </div>
             </div>
             <div className="car-img">
-              <img src="/src/assets/perfume.png" alt="Toy Car" />
+              <img src="/assets/perfume.png" alt="Toy Car" />
             </div>
           </SwiperSlide>
 
@@ -245,7 +245,7 @@ const MainSection = () => {
                         name: "Bluetooth Speaker",
                         price: 99,
                         quantity: 1,
-                        images: ["/src/assets/month-product.png"],
+                        images: ["/assets/month-product.png"],
                         category: "electronics",
                       })
                     }
@@ -257,10 +257,7 @@ const MainSection = () => {
               </div>
             </div>
             <div className="speaker-img">
-              <img
-                src="/src/assets/month-product.png"
-                alt="Bluetooth Speaker"
-              />
+              <img src="/assets/month-product.png" alt="Bluetooth Speaker" />
             </div>
           </SwiperSlide>
         </Swiper>

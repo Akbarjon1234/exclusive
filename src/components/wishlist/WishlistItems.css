@@ -117,6 +117,13 @@ p:nth-child(3) {
   width: 100px;
 }
 
+@media (max-width: 1200px){
+  .wishlist-header{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /* ✅ MEDIA QUERIES - 768px dan kichik ekranlar uchun */
 @media (max-width: 768px) {
   .container-wishlist {
@@ -182,3 +189,4 @@ p:nth-child(3) {
     padding: 20px;
   }
 }
+

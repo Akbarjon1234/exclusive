@@ -76,6 +76,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   margin-top: 20px;
+  margin-left: -10px;
 }
 /* 📱 Responsive styles for screens <= 768px */
 @media (max-width: 768px) {
@@ -123,7 +124,23 @@
     padding: 8px 0;
   }
 
-  .recommend .extra-products{
+  .recommend .extra-products {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 340px) {
+  .rec-title {
+    margin-left: -100px;
+  }
+  .recommend-header button {
+    margin-left: -100px;
+    width: 150px;
+    height: 30px;
+  }
+
+  .recommend-container {
+    width: 200px;
     margin-left: -50px;
   }
 }

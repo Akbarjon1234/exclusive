@@ -3,10 +3,10 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // import images
-import psImg from "../../../src/assets/ps.png";
-import collectionImg from "../../../src/assets/collection.png";
-import speakersImg from "../../../src/assets/speakers.png";
-import perfumeImg from "../../../src/assets/perfume.png";
+import psImg from "/assets/ps.png";
+import collectionImg from "/assets/collection.png";
+import speakersImg from "/assets/speakers.png";
+import perfumeImg from "/assets/perfume.png";
 
 const Featured = () => {
   const handleAddToCart = (product) => {

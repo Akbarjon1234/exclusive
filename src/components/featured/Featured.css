@@ -230,3 +230,16 @@
     bottom: 0;
   }
 }
+
+@media (max-width: 340px) {
+  .title{
+    margin-left: -100px;
+  }
+  .subtitle{
+    margin-left: -100px;
+  }
+  .featured-container{
+    margin-left: -100px;
+    width: 250px;
+  }
+}

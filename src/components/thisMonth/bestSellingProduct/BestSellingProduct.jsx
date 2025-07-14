@@ -60,7 +60,7 @@ const BestSellingProduct = () => {
       name: "Bluetooth Speaker",
       price: 99,
       quantity: 1,
-      images: ["../../../../src/assets/month-product.png"],
+      images: ["/assets/month-product.png"],
     };
 
     const cart = JSON.parse(localStorage.getItem("cart")) || [cart];
@@ -109,7 +109,7 @@ const BestSellingProduct = () => {
           <button onClick={handleAddToCart}>Buy Now!</button>
         </div>
         <div className="month-product__img">
-          <img src="../../../../src/assets/month-product.png" alt="speaker" />
+          <img src="/assets/month-product.png" alt="speaker" />
         </div>
       </div>
     </div>

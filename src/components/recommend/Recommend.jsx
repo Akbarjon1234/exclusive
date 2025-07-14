@@ -40,7 +40,7 @@ const Recommend = ({ recommendedData }) => {
   };
 
   const renderCard = (item) => (
-    <div key={item.id} className="recommend-card">
+    <div key={item.id} className="recommend-container">
       <div className="image">
         <div className="rec-eye" onClick={() => handleGoToDetail(item)}>
           <LuEye />

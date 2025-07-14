@@ -7,7 +7,7 @@ const Statistics = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/icon_shop.png" alt="shop icon" />
+            <img src="/assets/icon_shop.png" alt="shop icon" />
           </div>
         </div>
         <h3 className="count">10.5k</h3>
@@ -17,7 +17,7 @@ const Statistics = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/Icon-Sale.png" alt="sale icon" />
+            <img src="/assets/Icon-Sale.png" alt="sale icon" />
           </div>
         </div>
         <h3 className="count">33k</h3>
@@ -27,7 +27,7 @@ const Statistics = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/Icon-Shopping bag.png" alt="shopping bag icon" />
+            <img src="/assets/Icon-Shopping bag.png" alt="shopping bag icon" />
           </div>
         </div>
         <h3 className="count">45.5k</h3>
@@ -37,7 +37,7 @@ const Statistics = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/Icon-Moneybag.png" alt="money bag icon" />
+            <img src="/assets/Icon-Moneybag.png" alt="money bag icon" />
           </div>
         </div>
         <h3 className="count">25k</h3>

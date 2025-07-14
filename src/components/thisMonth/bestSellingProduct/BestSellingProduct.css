@@ -190,7 +190,7 @@
 
 /* 576px dan pastda */
 @media (max-width: 485px) {
-  .month-product{
+  .month-product {
     width: 400px;
     margin-left: -100px;
   }
@@ -210,5 +210,14 @@
 
   .month-product__img img {
     width: 85%;
+  }
+}
+@media (max-width: 340px) {
+  .month-product{
+    width: 300px;
+    margin-left: -120px;
+  }
+  .month-product__img {
+    width: 250px;
   }
 }

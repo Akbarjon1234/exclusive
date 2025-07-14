@@ -195,6 +195,9 @@ footer {
   .footer-download > div .app a img {
     width: 80%;
   }
+  .app {
+    margin-left: -80px;
+  }
 }
 
 /* 768px dan pastda — 1 ustun va shriftlar kichiklashadi */
@@ -236,7 +239,7 @@ footer {
   }
 
   .footer-download > div .qrcode img {
-    width: 80px; 
+    width: 80px;
     height: auto;
   }
 
@@ -248,11 +251,19 @@ footer {
   .footer-download > div .app a img {
     width: 80px;
   }
+  .app {
+    margin-left: -60px;
+  }
 }
 
 @media (max-width: 480px) {
   .footer-subscribe .logo {
     font-size: 20px;
+  }
+
+  .footer-content {
+    margin-left: -100px;
+    width: 250px;
   }
 
   .footer-content h3 {
@@ -280,5 +291,17 @@ footer {
     font-size: 13px;
     text-align: center;
     padding: 0 10px;
+  }
+  .app {
+    margin-left: -80px;
+  }
+}
+@media (max-width: 340px) {
+  .footer-content {
+    margin-left: -100px;
+    width: 250px;
+  }
+  .app {
+    margin-left: -80px;
   }
 }

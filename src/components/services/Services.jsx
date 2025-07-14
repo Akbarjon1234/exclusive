@@ -6,7 +6,7 @@ const Services = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/icon-delivery.png" alt="delivery icon" />
+            <img src="/assets/icon-delivery.png" alt="delivery icon" />
           </div>
         </div>
         <h3>FREE AND FAST DELIVERY</h3>
@@ -16,7 +16,7 @@ const Services = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/Icon-Customer service.png" alt="customer service icon" />
+            <img src="/assets/Icon-Customer service.png" alt="customer service icon" />
           </div>
         </div>
         <h3>24/7 CUSTOMER SERVICE</h3>
@@ -26,7 +26,7 @@ const Services = () => {
       <div className="content">
         <div className="icon-div">
           <div className="icon-border">
-            <img src="./src/assets/Icon-secure.png" alt="secure icon" />
+            <img src="/assets/Icon-secure.png" alt="secure icon" />
           </div>
         </div>
         <h3>MONEY BACK GUARANTEE</h3>

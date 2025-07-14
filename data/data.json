@@ -22,7 +22,7 @@
     },
     {
       "name": "Gaming",
-      "icon": "../src/assets/GAMEPAAD.png"
+      "icon": "/assets/GAMEPAAD.png"
     },
     {
       "name": "Books",

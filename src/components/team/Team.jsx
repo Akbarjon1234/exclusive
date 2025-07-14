@@ -9,7 +9,7 @@ const Team = () => {
 
       <div className="worker">
         <div className="img">
-          <img src="./src/assets/worker1.png" alt="Tom Cruise" />
+          <img src="/assets/worker1.png" alt="Tom Cruise" />
         </div>
         <h3>Tom Cruise</h3>
         <p>Founder & Chairman</p>
@@ -34,7 +34,7 @@ const Team = () => {
 
       <div className="worker">
         <div className="img">
-          <img src="./src/assets/worker2.png" alt="Emma Watson" />
+          <img src="/assets/worker2.png" alt="Emma Watson" />
         </div>
         <h3>Emma Watson</h3>
         <p>Managing Director</p>
@@ -59,7 +59,7 @@ const Team = () => {
 
       <div className="worker">
         <div className="img">
-          <img src="./src/assets/worker3.png" alt="Will Smith" />
+          <img src="/assets/worker3.png" alt="Will Smith" />
         </div>
         <h3>Will Smith</h3>
         <p>Product Designer</p>

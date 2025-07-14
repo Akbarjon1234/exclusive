@@ -150,3 +150,12 @@
     height: 28px;
   }
 }
+
+@media (max-width: 340px){
+  .content{
+    margin-left: -70px;
+  }
+  .content h3{
+    width: 200px;
+  }
+}

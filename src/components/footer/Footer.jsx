@@ -85,7 +85,7 @@ function Footer() {
         <div className="footer-download footer-content">
           <h3>Download App</h3>
           <p>Save $3 with App New User Only</p>
-          <div>
+          <div className="down-links">
             <div className="qrcode">
               <img src="../../../public/assets/qrcode.png" alt="QR Code" />
             </div>

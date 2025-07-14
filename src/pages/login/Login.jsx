@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <section className="login">
       <div className="login-img">
-        <img src="./src/assets/signup.png" alt="Login image" />
+        <img src="/assets/signup.png" alt="Login image" />
       </div>
 
       <form className="login-form" onSubmit={handleLogin}>
