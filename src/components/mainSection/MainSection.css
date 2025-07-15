@@ -440,203 +440,130 @@
   display: block;
   margin-left: auto;
 }
+/* Responsive Styles */
 
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
+/* 1200px dan kichik ekranlar */
+@media (max-width: 1200px) {
   .home-main {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 80px;
+    grid-template-columns: 1fr;
+    display: block;
   }
 
   .home-main .category-list {
-    padding: 20px;
+    width: 80%;
     border-right: none;
+    padding: 20px 10px 0 10px;
     border-bottom: 1px solid #00000030;
-    width: 100%;
   }
-
-  .home-main .category-list > ul {
-    flex-direction: column;
-    gap: 12px;
-    margin-left: -100px;
-  }
-
-  /* .home-main .category-list > ul li {
-    flex-direction: row;
-    justify-content: space-between;
-  } */
-  /* 
-  .home-main .category-list > ul li > ul {
-    position: static;
-    padding-left: 20px;
-    border: none;
-    background: #f9f9f9;
-    clip-path: none;
-    display: none;
-  } */
-
-  /* .home-main .category-list > ul li:hover > ul {
-    display: block;
-  } */
 
   .slide {
+    margin: 20px 0 0 0;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    display: none;
   }
 
   .swiper {
-    width: 400px;
-    height: auto;
-    margin-left: -100px !important;
-  }
-
-  .swiper-slide {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    height: 320px;
+    margin: 0 auto;
   }
 
   .swiper-slide img {
-    width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
   }
 
   .swiper-slide .img-text {
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
+    max-width: 350px;
+    padding: 20px 10px;
   }
 
-  .Voucher h1,
-  .slide-title {
-    font-size: 26px !important;
-    text-align: center;
+  .img-text p {
+    font-size: 18px;
   }
 
-  .iphone-img,
-  .Iphone .Iphone-img,
-  .lenovo-img,
-  .speaker-img {
-    position: static !important;
-    padding-left: 0;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
+  .Voucher h1 {
+    font-size: 32px;
   }
 
-  .toycar-slide + .car-img img {
-    width: 200px !important;
+  .shop-link button {
+    font-size: 16px;
+    padding: 10px 20px;
   }
 
   .speaker-img img {
-    max-width: 280px;
-    margin: 0 auto;
+    max-width: 250px;
+  }
+}
+
+/* 992px dan kichik ekranlar */
+@media (max-width: 992px) {
+  .swiper {
+    max-width: 800px;
+    height: 300px;
   }
 
-  .shop-link {
-    justify-content: center;
+  .swiper-slide img {
+    max-width: 250px;
+  }
+
+  .swiper-slide .img-text {
+    max-width: 250px;
+  }
+
+  .img-text p {
+    font-size: 14px;
+  }
+
+  .Voucher h1 {
+    font-size: 28px;
   }
 
   .shop-link button {
     font-size: 14px;
-    padding: 10px 18px;
-  }
-
-  .toycar-slide {
-    margin-right: -40px;
-  }
-}
-
-@media (max-width: 340px) {
-  .home-main {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
-  }
-
-  .home-main .category-list {
-    padding: 10px;
-    border-right: none;
-    border-bottom: 1px solid #00000020;
-    width: 100%;
-  }
-
-  .home-main .category-list > ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-left: -140px;
-    width: 150px;
-  }
-
-  .slide {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .swiper {
-    width: 290px;
-    height: auto;
-    margin-left: -120px !important;
-  }
-
-  .swiper-slide {
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    max-width: 240px;
-    height: auto;
-  }
-
-  .swiper-slide .img-text {
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .Voucher h1,
-  .slide-title {
-    font-size: 18px !important;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  .iphone-img,
-  .Iphone .Iphone-img,
-  .lenovo-img,
-  .speaker-img {
-    position: static !important;
-    padding-left: 0;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-  }
-
-  .toycar-slide + .car-img img {
-    width: 150px !important;
+    padding: 8px 18px;
   }
 
   .speaker-img img {
     max-width: 200px;
-    margin: 0 auto;
   }
 
-  .shop-link {
-    justify-content: center;
-    flex-wrap: wrap;
+  .speaker-text h1 {
+    font-size: 10px;
   }
 
-  .shop-link button {
-    font-size: 12px;
-    padding: 8px 14px;
+  .Iphone .Iphone-img img {
+    margin-left: -200px;
+  }
+
+  .img-text .Voucher h1 {
+    font-size: 20px !important;
+  }
+  .speaker-text h1 {
+    font-size: 20px !important;
+  }
+}
+
+/* 768px dan kichik ekranlar (planshetlar) */
+@media (max-width: 768px) {
+  .swiper {
+    /* max-width: 800px; */
+    width: 100%;
+    margin-left: -100px !important;
+    height: 300px;
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+
+  .swiper-slide {
+    flex-direction: column;
+  }
+
+  .swiper-slide .img-text {
+    max-width: 200px;
+    padding: 10px;
   }
 
   .img-text p {
@@ -645,5 +572,114 @@
 
   .Voucher h1 {
     font-size: 20px;
+  }
+
+  .shop-link button {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  .speaker-img img {
+    max-width: 180px;
+  }
+
+  .toycar-slide {
+    width: 200px;
+    height: 100px;
+  }
+
+  .toy-car .shop-link button {
+    font-size: 10px;
+  }
+
+  .toy-car .car-img img {
+    height: 200px;
+  }
+}
+
+/* 480px dan kichik ekranlar (telefonlar) */
+@media (max-width: 480px) {
+  .home-main .category-list > ul li span {
+    font-size: 14px;
+  }
+
+  .swiper {
+    max-width: 500px;
+    height: 200px;
+  }
+
+  .swiper-slide img {
+    max-width: 150px;
+  }
+
+  .swiper-slide .img-text {
+    max-width: 90%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .Voucher h1 {
+    font-size: 18px;
+  }
+
+  .shop-link button {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .speaker-img img {
+    max-width: 140px;
+  }
+  .speaker-slide {
+    width: 500px;
+  }
+
+  .speaker-slide .slide-title {
+    font-size: 20px;
+  }
+
+  .shop-link button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .speaker-img {
+    width: 600px;
+    margin-left: -50px;
+  }
+  .speaker-img img {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } 
+}
+
+/* 340px dan kichik ekranlar */
+@media (max-width: 340px) {
+  .swiper {
+    height: 180px;
+  }
+
+  .swiper-slide img {
+    max-width: 120px;
+  }
+
+  .Voucher h1 {
+    font-size: 16px;
+  }
+
+  .shop-link button {
+    font-size: 10px;
+    padding: 4px 10px;
   }
 }

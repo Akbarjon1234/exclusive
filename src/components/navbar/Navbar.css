@@ -443,7 +443,7 @@ nav ul {
   }
   .search-results {
     position: absolute;
-    top: 100%;
+    top: -200px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -451,8 +451,19 @@ nav ul {
     border-radius: 4px;
     max-height: 250px;
     overflow-y: auto;
-    z-index: 1000;
+    z-index: 9999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-results li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+
+  .search-results li:hover {
+    background: #f5f5f5;
   }
 
   .navbar-top {
@@ -471,7 +482,7 @@ nav ul {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 290px !important;
   }
 
   nav ul {
@@ -529,21 +540,6 @@ nav ul {
 
   .navbar-search button {
     font-size: 16px;
-  }
-
-  /* Search natijalari input USTIDA chiqsin */
-  .search-results {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 9999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   /* Iconlar moslashtirish */

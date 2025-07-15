@@ -26,19 +26,19 @@
     },
     {
       "name": "Books",
-      "icon": "./assets/books.png"
+      "icon": "/assets/books.png"
     },
     {
       "name": "Parfume",
-      "icon": "./assets/parfume.png"
+      "icon": "/assets/parfume.png"
     },
     {
       "name": "Apparel & Accessories",
-      "icon": "./assets/cloth.webp"
+      "icon": "/assets/cloth.webp"
     },
     {
       "name": "Toys",
-      "icon": "./assets/toys.png"
+      "icon": "/assets/toys.png"
     }
   ],
 
