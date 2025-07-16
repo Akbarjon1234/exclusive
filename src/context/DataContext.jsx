@@ -10,11 +10,11 @@ export const DataProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    fetch("https://api.example.com/products")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
         setProductsData({
-          data,
+          data: data.products, // ✅ faqat products qismi olinadi
           isPending: false,
           error: null,
         });
@@ -51,10 +51,8 @@ export const DataProvider = ({ children }) => {
     error: null,
   });
 
-  // Selected product for Detail page
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Sync to localStorage
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cartData.data));
   }, [cartData.data]);
@@ -63,16 +61,6 @@ export const DataProvider = ({ children }) => {
     localStorage.setItem("wishlist", JSON.stringify(wishlistData.data));
   }, [wishlistData.data]);
 
-  // On first load, sync state from localStorage
-  useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    setCartData((prev) => ({
-      ...prev,
-      data: storedCart,
-    }));
-  }, []);
-
-  // 💡 Add to Cart function
   const addToCart = (item) => {
     const exists = cartData.data.find((p) => p.id === item.id);
     let updatedCart;
