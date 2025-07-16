@@ -363,57 +363,61 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 960px) {
   .checkout {
     padding: 40px 20px;
   }
 
   .checkout > h1 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 32px;
     text-align: center;
   }
 
   .checkout-form {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
-  .checkout-form .text-form {
-    gap: 24px;
+  .checkout-form .text-form,
+  .payment-foorm {
+    width: 100%;
+    gap: 20px;
   }
 
   .checkout-form .text-form .form-group label {
     font-size: 14px;
   }
 
-  .checkout-form .text-form .form-group input {
+  .checkout-form .text-form .form-group input,
+  .form-group select {
     padding: 12px 16px;
     font-size: 14px;
   }
 
   .checkout-form .text-form > label {
-    gap: 12px;
     font-size: 14px;
+    gap: 10px;
   }
 
   .checkout-form .text-form > label .text {
     font-size: 14px;
   }
 
-  .payment-foorm {
-    gap: 24px;
-  }
-
   .checkout-items {
     width: 100%;
-    gap: 24px;
+    gap: 20px;
   }
 
   .checkout-items li {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .checkout-items li p,
+  .checkout-payment p span {
+    font-size: 14px;
   }
 
   .checkout-items li .item-price {
@@ -424,47 +428,31 @@
     width: 100%;
   }
 
-  .checkout-payment p span {
-    font-size: 14px;
-  }
-
-  .payment-way {
-    width: 100%;
-    gap: 24px;
-  }
-
-  .payment-way label {
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-  }
-
+  .payment-way,
   .payment-way label > span {
     font-size: 14px;
   }
 
   .payment-way label img {
-    width: 100px;
+    width: 80px;
   }
 
   .payment-foorm .coupon {
-    grid-template-columns: 1fr;
     width: 100%;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .payment-foorm .coupon input {
-    padding: 12px 16px;
-    font-size: 14px;
-  }
-
+  .payment-foorm .coupon input,
   .payment-foorm .coupon button {
-    padding: 12px 16px;
+    width: 100%;
+    padding: 12px 14px;
     font-size: 14px;
   }
 
   .payment-foorm .order-btn {
     width: 100%;
-    padding: 12px 16px;
-    font-size: 14px;
+    padding: 14px;
+    font-size: 15px;
   }
 }

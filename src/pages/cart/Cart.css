@@ -371,81 +371,72 @@
     opacity: 1;
   }
 }
-
-@media (max-width: 960px) {
-  .cart-total {
-    margin-top: 40px;
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
 @media (max-width: 768px) {
   .cart {
     padding-top: 40px;
     padding-bottom: 60px;
-    margin-left: -50px;
-  }
-
-  .cart-container table thead tr {
-    display: flex;
-    align-items: center;
+    margin: 0;
   }
 
   .cart-container table thead tr,
   .cart-container table tbody tr {
-    grid-template-columns: 1fr;
-    padding: 16px;
-    gap: 20px;
+    gap: 15px;
+    padding: 12px;
     text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    margin-left: -100px;
+    width: 400px;
   }
 
   .cart-container tbody {
-    gap: 24px;
+    gap: 20px;
   }
 
   .cart-container tbody tr .img {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
 
   .cart-container tbody tr .img img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .cart-container tbody tr .img span {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .cart-container tbody tr .price,
   .cart-container tbody tr .subtotal {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .cart-container tbody tr td .quantity {
-    gap: 8px;
-    padding: 4px 10px;
+    padding: 4px 8px;
+    gap: 6px;
   }
 
   .cart-container__links {
     flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 12px;
   }
 
   .cart-container__links a,
   .cart-container__links button {
-    width: 100%;
-    padding: 14px 0;
-    text-align: center;
+    width: 400px;
+    text-align: center !important;
+    font-size: 14px;
+  }
+
+  .cart-container__links button{
+    padding-left: 130px !important;
+
   }
 
   .cart-total {
-    margin-top: 40px;
+    margin-top: 30px;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   .coupon-code form {
@@ -455,12 +446,16 @@
 
   .coupon-code form input,
   .coupon-code form button {
-    width: 100%;
-    padding: 14px;
+    width: 400px;
+    padding: 12px;
+    font-size: 14px;
+    margin-left: -100px;
   }
 
   .cart-total__checkout {
-    padding: 24px 16px;
+    padding: 20px 14px;
+    width: 400px;
+    margin-left: -100px;
   }
 
   .cart-total__checkout p span {
@@ -469,6 +464,7 @@
 
   .cart-total__checkout > a {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
+    font-size: 15px;
   }
 }

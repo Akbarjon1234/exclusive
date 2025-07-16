@@ -187,6 +187,7 @@ const Cart = () => {
                 setShowModal(true);
               }
             }}
+            style={{}}
           >
             Delete All Products
           </button>

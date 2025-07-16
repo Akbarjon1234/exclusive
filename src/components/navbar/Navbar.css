@@ -435,9 +435,10 @@ nav ul {
 }
 
 @media (max-width: 1200px) {
-  .category-list{
+  .category-list {
     margin-top: 50px;
   }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -455,7 +456,7 @@ nav ul {
   .navbar-top .logo {
     font-size: 22px;
     font-weight: bold;
-    color: #db4444;
+    color: #000;
     margin-left: 0;
   }
 
@@ -503,28 +504,27 @@ nav ul {
     border-bottom: none;
   }
 
-  /* Search bar optimization */
+  /* Search input fixed top */
   .navbar-search {
-    position: absolute;
-    /* top: 40px; */
+    position: fixed;
+    top: 0;
     left: 0;
-    bottom: 550px;
     width: 100%;
     height: 50px;
+    background: #fff;
     z-index: 9999;
-    background: white;
-    padding: 10px 15px;
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 15px;
   }
 
-  /* Qidiruv natijalari ham input tagida chiqadi */
+  /* Search results directly below the search input */
   .search-results {
     position: fixed;
-    top: 90px; /* inputdan pastda chiqadi */
+    top: 50px; /* search inputdan to‘g‘ri pastda */
     left: 0;
     width: 100%;
     background: white;
@@ -546,7 +546,7 @@ nav ul {
     background: #f5f5f5;
   }
 
-  /* Past fixed icon panel */
+  /* Fixed icon buttons panel bottom */
   .navbar-btns {
     position: fixed;
     bottom: 0;
@@ -558,7 +558,7 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     padding: 8px 0;
-    z-index: 9999;
+    z-index: 9998;
   }
 
   .icon-wrapper,
@@ -583,5 +583,10 @@ nav ul {
 
   .logout-btn:hover {
     color: #fff;
+  }
+
+  /* Navbar yuqoriga joylashish uchun padding qoldirish */
+  .navbar {
+    padding-top: 60px; /* search input balandligi uchun joy */
   }
 }
