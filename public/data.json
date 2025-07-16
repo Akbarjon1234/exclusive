@@ -2,23 +2,23 @@
   "categories": [
     {
       "name": "Phones",
-      "icon": "./assets/phones.png"
+      "icon": "/assets/phones.png"
     },
     {
       "name": "Computers",
-      "icon": "./assets/computers.png"
+      "icon": "/assets/computers.png"
     },
     {
       "name": "Furniture",
-      "icon": "./assets/furniture.png"
+      "icon": "/assets/furniture.png"
     },
     {
       "name": "Camera",
-      "icon": "./assets/camera.png"
+      "icon": "/assets/camera.png"
     },
     {
       "name": "HeadPhones",
-      "icon": "./assets/headphones.png"
+      "icon": "/assets/headphones.png"
     },
     {
       "name": "Gaming",

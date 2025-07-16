@@ -117,35 +117,17 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("/data.json")
       .then((res) => res.json())
-      .then((data) => setProductsData({ data }))
-      .catch((err) => console.error("Products fetch error", err));
-
-    fetch("http://localhost:3000/categories")
-      .then((res) => res.json())
-      .then((data) => setCategoryData({ data }))
-      .catch((err) => console.error("Categories fetch error", err));
-
-    fetch("http://localhost:3000/bestProducts")
-      .then((res) => res.json())
-      .then((data) => setBestProductsData({ data }))
-      .catch((err) => console.error("BestProduct fetch error", err));
-
-    fetch("http://localhost:3000/flashSales")
-      .then((res) => res.json())
-      .then((data) => setFlashSalesData({ data }))
-      .catch((err) => console.error("FlashSales fetch error", err));
-
-    fetch("http://localhost:3000/recommended")
-      .then((res) => res.json())
-      .then((data) => setRecommendedData({ data }))
-      .catch((err) => console.error("Recommended fetch error", err));
-
-    fetch("http://localhost:3000/relatedData")
-      .then((res) => res.json())
-      .then((data) => setRelatedData({ data }))
-      .catch((err) => console.error("RelatedItems fetch error", err));
+      .then((data) => {
+        setProductsData({ data: data.products });
+        setCategoryData({ data: data.categories });
+        setBestProductsData({ data: data.bestProducts });
+        setFlashSalesData({ data: data.flashSales });
+        setRecommendedData({ data: data.recommended });
+        setRelatedData({ data: data.relatedData });
+      })
+      .catch((err) => console.error("Data fetch error", err));
   }, []);
 
   const routes = createBrowserRouter([
