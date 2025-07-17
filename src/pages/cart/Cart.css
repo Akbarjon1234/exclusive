@@ -385,7 +385,7 @@
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
     margin-left: -100px;
-    width: 350px;
+    width: 320px;
   }
 
   .cart-container tbody {
@@ -423,13 +423,13 @@
 
   .cart-container__links a,
   .cart-container__links button {
-    width: 400px;
+    width: 320px;
     text-align: center !important;
     font-size: 14px;
   }
 
   .cart-container__links button{
-    padding-left: 130px !important;
+    padding-left: 90px !important;
 
   }
 
@@ -446,16 +446,16 @@
 
   .coupon-code form input,
   .coupon-code form button {
-    width: 400px;
+    width: 340px;
     padding: 12px;
     font-size: 14px;
-    margin-left: -130px;
+    margin-left: -110px;
   }
 
   .cart-total__checkout {
     padding: 20px 14px;
-    width: 400px;
-    margin-left: -130px;
+    width: 340px;
+    margin-left: -110px;
   }
 
   .cart-total__checkout p span {

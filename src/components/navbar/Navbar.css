@@ -451,7 +451,7 @@ nav ul {
     font-size: 22px;
     font-weight: bold;
     color: #000;
-    margin-left: 0;
+    margin-left: -100px;
   }
 
   .menu-toggle {
@@ -462,6 +462,7 @@ nav ul {
     cursor: pointer;
     color: #333;
     margin: 0;
+    margin-left: 160px;
   }
 
   nav ul {

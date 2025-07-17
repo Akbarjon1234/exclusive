@@ -64,7 +64,7 @@ const ThisMonth = () => {
             <IoEyeOutline />
           </div>
         </div>
-        <img src={item.images[0]} alt={item.name} />
+        <img className="this-image" src={item.images[0]} alt={item.name} />
         <div className="add-to-cart" onClick={() => addToCart(item)}>
           Add to Cart
         </div>

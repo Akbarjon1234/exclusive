@@ -463,24 +463,6 @@
     margin-left: -100px;
   }
 
-  /* .home-main .category-list > ul li {
-    flex-direction: row;
-    justify-content: space-between;
-  } */
-  /* 
-  .home-main .category-list > ul li > ul {
-    position: static;
-    padding-left: 20px;
-    border: none;
-    background: #f9f9f9;
-    clip-path: none;
-    display: none;
-  } */
-
-  /* .home-main .category-list > ul li:hover > ul {
-    display: block;
-  } */
-
   .slide {
     flex-direction: column;
     align-items: center;
@@ -490,7 +472,7 @@
 
   .swiper {
     width: 400px;
-    height: auto;
+    height: 700px;
     margin-left: -100px !important;
   }
 

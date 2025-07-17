@@ -247,6 +247,10 @@
     box-sizing: border-box;
     padding: 0 80px;
   }
+
+  .image .this-image{
+    padding: 20px 5px;
+  }
 }
 @media (max-width: 340px) {
   .nav-text h1 {

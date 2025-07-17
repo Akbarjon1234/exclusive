@@ -251,6 +251,10 @@
     display: flex;
   }
 
+  .image .our-img{
+    padding: 20px;
+  }
+
   .item-words {
     gap: 3px;
   }
