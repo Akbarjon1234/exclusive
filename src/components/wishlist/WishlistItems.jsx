@@ -53,7 +53,6 @@ const WishlistItems = () => {
   };
 
   const isScrollable = data.length > 4;
-  console.log(data)
 
   return (
     <div className="container-wishlist">

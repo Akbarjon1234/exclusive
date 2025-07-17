@@ -137,6 +137,7 @@
     padding: 20px 15px;
     gap: 20px;
     box-shadow: none;
+    margin-left: -100px;
   }
 
   .contact-connect .call-header,
@@ -161,6 +162,8 @@
     padding: 20px 15px;
     gap: 20px;
     box-shadow: none;
+    margin-left: -100px;
+    width: 350px;
   }
 
   .contact form .form-group {

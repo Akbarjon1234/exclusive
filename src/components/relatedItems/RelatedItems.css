@@ -228,14 +228,17 @@
   .relatedItems-header .p-icon {
     width: 12px;
     height: 28px;
+    margin-left: -100px;
   }
 
   .relatedItems-header p {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .relatedItems-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 400px;
+    margin-left: -130px;
     gap: 12px;
   }
 

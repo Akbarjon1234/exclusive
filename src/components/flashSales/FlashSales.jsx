@@ -163,7 +163,7 @@ const FlashSales = () => {
           <p>Today's</p>
         </div>
         <div className="flash-nav">
-          <h1>Flash Sales</h1>
+          <h1 className="flash">Flash Sales</h1>
           <div className="timer">
             <div className="t-t">
               <p>Days</p>

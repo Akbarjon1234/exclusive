@@ -75,9 +75,11 @@ const Recommend = ({ recommendedData }) => {
       </div>
 
       <div className="recommend-container">
-        {isPending && <h1>Loading...</h1>}
-        {error && <h1>{error}</h1>}
-        {recData && recData.map(renderCard)}
+        <div className="product">
+          {isPending && <h1>Loading...</h1>}
+          {error && <h1>{error}</h1>}
+          {recData && recData.map(renderCard)}
+        </div>
       </div>
 
       {showMore && (

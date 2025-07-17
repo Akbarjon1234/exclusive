@@ -11,6 +11,10 @@
   color: gray;
 }
 
+.recommend-container p{
+  padding-top: 0px;
+}
+
 .recommend-container {
   display: flex;
   justify-content: center;
@@ -74,7 +78,7 @@
 .recommend-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  /* gap: 40px; */
   margin-top: 20px;
   margin-left: -10px;
 }
@@ -90,6 +94,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+    margin-left: -100px;
   }
 
   .rec-title h1 {
@@ -98,13 +103,16 @@
 
   .recommend-header button {
     width: 100%;
-    height: 50px;
     font-size: 15px;
+    padding: 10px;
   }
 
-  .recommend-container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
+  .recommend-container .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2tadan chiqadi */
+    gap: 15px;
+    padding: 0 10px;
+    margin-left: -100px;
     margin-top: 30px;
   }
 
@@ -125,7 +133,11 @@
   }
 
   .recommend .extra-products {
-    margin-left: -50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2tadan chiqadi */
+    gap: 15px;
+    padding: 0 10px;
+    margin-left: 5px;
   }
 }
 

@@ -435,14 +435,8 @@ nav ul {
 }
 
 @media (max-width: 1200px) {
-  .category-list {
-    margin-top: 50px;
-  }
-
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 15px;
     background: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
@@ -479,29 +473,46 @@ nav ul {
     gap: 10px;
   }
 
+  /* Mobil menyu uchun - Burger bosilganda chiqadigan linklar */
   nav ul.active {
     display: flex;
-    background: #f9f9f9;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: #fff;
     border-radius: 8px;
-    padding: 10px 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+    margin-top: 15px;
   }
 
-  nav ul li {
+  nav ul.active li {
     width: 100%;
   }
 
-  nav ul li a {
+  nav ul.active li a {
     display: block;
     width: 100%;
-    padding: 10px 0;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
+    padding: 5px;
     color: #333;
     border-bottom: 1px solid #eee;
+    transition: all 0.2s ease;
   }
 
-  nav ul li:last-child a {
+  nav ul.active li:last-child a {
     border-bottom: none;
+  }
+
+  nav ul.active li a:hover {
+    color: #db4444;
+    transform: translateX(5px);
+  }
+
+  nav ul.active li a.active {
+    color: #db4444;
+    font-weight: 600;
   }
 
   /* Search input fixed top */

@@ -175,6 +175,7 @@
   .featured .subtitle {
     font-size: 22px;
     text-align: center;
+    margin-left: -250px;
   }
 
   .featured-container .left .ps,
@@ -201,12 +202,18 @@
     padding-top: 50px;
   }
 
+  .featured .title{
+    margin-left: -120px;
+  }
+
   .featured .subtitle {
     font-size: 20px;
   }
 
   .featured-container {
     gap: 16px;
+    width: 350px;
+    margin-left: -100px;
   }
 
   .featured-container .featured-content {

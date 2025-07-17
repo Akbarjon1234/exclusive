@@ -130,10 +130,11 @@
   }
 
   .container-month {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 30px;
     padding: 40px 40px;
+    display: grid;
   }
 
   .container-month .product {
@@ -145,10 +146,12 @@
 @media (max-width: 992px) {
   .nav-text h1 {
     font-size: 30px;
+    margin-left: -130px;
   }
 
   .p-text {
     padding-top: 80px;
+    margin-left: -100px;
   }
 
   .nav-text .p-text p {
@@ -156,12 +159,30 @@
   }
 
   .container-month {
-    gap: 20px;
-    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
   }
 
   .container-month .product {
-    width: 240px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .extra-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
   }
 
   .section-header button {
@@ -176,19 +197,11 @@
   .nav-text h1 {
     font-size: 26px;
   }
-
+  /* 
   .container-month {
     gap: 18px;
     padding: 30px 15px;
-  }
-
-  .container-month .product {
-    width: 220px;
-  }
-
-  .container-month .image {
-    width: 220px;
-  }
+  } */
 }
 
 /* 576px dan kichik ekranlar uchun */
@@ -209,26 +222,35 @@
     width: 100%;
     margin-top: 100px;
   }
-
   .container-month {
-    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px 80px;
   }
 
   .container-month .product {
     width: 100%;
-    max-width: 250px;
+    max-width: 100%;
   }
 
   .extra-products {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* padding: 0 15px; */
-    padding-left: 80px;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 80px;
   }
 }
 @media (max-width: 340px) {
   .nav-text h1 {
     font-size: 18px;
-    text-align: center;
   }
 
   .nav-text p {

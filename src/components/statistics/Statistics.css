@@ -111,6 +111,11 @@
 
 @media (max-width: 480px) {
   .statistics {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -110px;
+  }
+
+  .statistics .content{
+    width: 170px;
   }
 }

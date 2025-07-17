@@ -318,6 +318,19 @@
     padding: 20px 30px;
     gap: 30px;
   }
+
+  .image .img-nav .img-heart,
+  .image .img-nav .img-eye
+  {
+    width: 40px;
+    height: 50px;
+  }
+  .today{
+    margin-left: -100px;
+  }
+  .flash-nav .flash{
+    margin-left: -170px;
+  }
 }
 
 /* 768px dan kichik ekranlar uchun */

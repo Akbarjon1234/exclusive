@@ -399,8 +399,9 @@
 }
 
 /* details info end */
-/* ============== RESPONSIVE ============== */
+/* === RESPONSIVE DESIGN === */
 
+/* 1024px dan kichik ekranlar uchun */
 @media (max-width: 1024px) {
   .detail {
     grid-template-columns: 1fr;
@@ -408,12 +409,12 @@
   }
 
   .detail .detail-images {
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 100px 1fr;
     gap: 16px;
   }
 
   .detail .detail-images .show-image {
-    height: 450px;
+    height: 400px;
   }
 
   .detail .detail-info .count-div {
@@ -432,9 +433,16 @@
   }
 }
 
+/* 768px dan kichik ekranlar uchun */
 @media (max-width: 768px) {
+  .detail {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
   .detail .detail-images {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .detail .detail-images .images-options {
@@ -445,70 +453,101 @@
   }
 
   .detail .detail-images .images-options .image {
-    width: 80px;
-    min-height: auto;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .detail .detail-images .show-image {
     height: 300px;
   }
 
+  .detail .detail-images .show-image img {
+    width: 160px;
+  }
+
   .detail .detail-info > h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .detail .detail-info > .price {
-    font-size: 20px;
-  }
-
-  .detail .detail-info .delivery {
-    flex-direction: column;
-  }
-
-  .detail .detail-info .delivery > div {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .detail .detail-info .delivery > div > .icon-div {
-    font-size: 28px;
-    width: auto;
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .detail .detail-images .images-options .image img {
-    width: 40px;
-  }
-
-  .detail .detail-images .show-image img {
-    width: 150px;
+    font-size: 18px;
   }
 
   .detail .detail-info > .desc {
-    font-size: 13px;
+    font-size: 14px;
+  }
+
+  .detail .detail-info .delivery > div {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .detail .detail-info .delivery > div > .info h3 {
+    font-size: 14px;
+  }
+
+  .detail .detail-info .delivery > div > .info p {
+    font-size: 12px;
+  }
+}
+
+/* 480px dan kichik ekranlar uchun */
+@media (max-width: 480px) {
+  .detail {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-left: -100px;
+  }
+
+  .detail .detail-images .images-options .image {
+    width: 200px;
+  }
+
+  .detail .detail-images .images-options .image img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .detail .detail-images .show-image {
+    height: 330px;
+    width: 330px;
+  }
+
+  .detail .detail-images .show-image img {
+    width: 120px;
+  }
+
+  .detail .detail-info > h2,
+  .detail .detail-info > .price {
+    font-size: 16px;
+  }
+
+  .detail .detail-info > .desc {
+    font-size: 12px;
   }
 
   .detail .detail-info .count-div .count span {
-    min-width: 60px;
+    min-width: 50px;
+    font-size: 16px;
   }
 
   .detail .detail-info .count-div .buynow {
     font-size: 14px;
-    height: 40px;
+    height: 36px;
   }
 
   .detail .detail-info > .color p,
   .detail .detail-info > .size p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .detail .detail-info > .color label span,
-  .detail .detail-info > .size label span {
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
+  .detail .detail-info > .color label span {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+  .detail .detail-info > .size label span{
+    width: 40px;
   }
 }

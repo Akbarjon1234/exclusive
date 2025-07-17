@@ -453,7 +453,8 @@
     padding: 20px;
     border-right: none;
     border-bottom: 1px solid #00000030;
-    width: 100%;
+    width: 200px;
+    margin-left: -50px;
   }
 
   .home-main .category-list > ul {
@@ -484,6 +485,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-left: -50px;
   }
 
   .swiper {
@@ -561,14 +563,11 @@
     padding: 10px;
     border-right: none;
     border-bottom: 1px solid #00000020;
-    width: 100%;
   }
 
   .home-main .category-list > ul {
     flex-direction: column;
     gap: 10px;
-    margin-left: -140px;
-    width: 150px;
   }
 
   .slide {
@@ -646,79 +645,4 @@
   .Voucher h1 {
     font-size: 20px;
   }   
-}
-@media (max-width: 420px) {
-  .home-main {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
-  }
-
-  .home-main .category-list {
-    padding: 10px;
-    border-right: none;
-    border-bottom: 1px solid #00000020;
-    width: 100%;
-    background-color: #ffffff;
-  }
-
-  .home-main .category-list > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-  }
-
-  .home-main .category-list > ul li {
-    flex: 1 1 45%; /* 2 ta yonma-yon, kerak bo‘lsa 3 ta qilib 30% qilishingiz mumkin */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    padding: 8px 4px;
-    border: 1px solid #e5e7eb;
-    border-radius: 6px;
-    background: #f9f9f9;
-    text-align: center;
-  }
-
-  .home-main .category-list > ul li span {
-    font-size: 13px;
-    line-height: 18px;
-    font-family: "Poppins", sans-serif;
-    color: #000000;
-  }
-
-  .home-main .category-list > ul li:hover {
-    background: #f3f4f6;
-  }
-
-  .home-main .category-list > ul li > ul {
-    display: none !important;
-  }
-
-  /* Slider uchun ham optimallashtirish */
-  .swiper {
-    width: 100%;
-    max-width: 290px;
-    margin: 20px auto;
-  }
-
-  .swiper-slide img {
-    max-width: 220px;
-  }
-
-  .swiper-slide .img-text {
-    padding: 10px;
-  }
-
-  .Voucher h1,
-  .slide-title {
-    font-size: 18px !important;
-  }
 }
