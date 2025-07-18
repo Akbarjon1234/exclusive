@@ -126,13 +126,6 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.our-toggle-btn:hover {
-  background-color: #fff;
-  color: #db4444;
-  border: 2px solid #db4444;
 }
 
 /* RESPONSIVE BREAKPOINTS */
@@ -247,12 +240,12 @@
   }
 
   .image img {
-    height: 150px;
+    height: auto;
     display: flex;
   }
 
   .image .our-img{
-    padding: 20px;
+    padding: 30px;
   }
 
   .item-words {

@@ -81,13 +81,13 @@ const Cart = () => {
 
     if (code === "SALE10") {
       setDiscount(10);
-      setMessage("10% chegirma qo‘llandi!");
+      setMessage("10% discount applied!");
     } else if (code === "SALE20") {
       setDiscount(20);
-      setMessage("20% chegirma qo‘llandi!");
+      setMessage("20% discount applied!");
     } else {
       setDiscount(0);
-      setMessage("Noto‘g‘ri kupon kodi!");
+      setMessage("Invalid coupon code!");
     }
   };
 
@@ -104,7 +104,7 @@ const Cart = () => {
         <div className="modal-overlay">
           <div className="modal-content">
             <FaTrashAlt className="trash-bin" />
-            <h3>Barcha mahsulotlarni o‘chirmoqchimisiz?</h3>
+            <h3>Do you want to delete all products?</h3>
             <div className="modal-btns">
               <button
                 className="cancel-btn"

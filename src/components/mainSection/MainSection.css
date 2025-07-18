@@ -454,7 +454,7 @@
     border-right: none;
     border-bottom: 1px solid #00000030;
     width: 200px;
-    margin-left: -50px;
+    margin-left: -40px;
   }
 
   .home-main .category-list > ul {
@@ -473,7 +473,7 @@
   .swiper {
     width: 400px;
     height: 700px;
-    margin-left: -100px !important;
+    margin-left: -90px !important;
   }
 
   .swiper-slide {

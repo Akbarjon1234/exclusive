@@ -146,12 +146,12 @@
 @media (max-width: 992px) {
   .nav-text h1 {
     font-size: 30px;
-    margin-left: -130px;
+    margin-left: -120px;
   }
 
   .p-text {
     padding-top: 80px;
-    margin-left: -100px;
+    margin-left: -120px;
   }
 
   .nav-text .p-text p {

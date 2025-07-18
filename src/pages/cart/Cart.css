@@ -420,7 +420,7 @@
     flex-direction: column;
     gap: 12px;
   }
-
+  
   .cart-container__links a,
   .cart-container__links button {
     width: 320px;

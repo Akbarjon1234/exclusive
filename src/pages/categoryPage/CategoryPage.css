@@ -144,8 +144,9 @@
 /* 📱 576px dan kichik ekranlar (mobil) */
 @media (max-width: 576px) {
   .category-products-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    margin-left: -115px;
   }
 
   .category-products-text {
@@ -155,6 +156,7 @@
 
   .category-product-card {
     padding: 12px;
+    width: 180px;
   }
 
   .category-product-card img {

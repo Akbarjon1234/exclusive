@@ -155,22 +155,6 @@
       "category": "computers"
     },
     {
-      "id": 9,
-      "sale": "-25%",
-      "images": [
-        "/assets/flashsales/chair.png",
-        "/assets/flashsales/chair.png",
-        "/assets/flashsales/chair.png",
-        "/assets/flashsales/chair.png"
-      ],
-      "name": "S-Series Comfort Chair ",
-      "price": 400,
-      "discountPercentage": 25,
-      "discountPrice": 375,
-      "stars": 99,
-      "category": "furniture"
-    },
-    {
       "id": 10,
       "sale": "-30%",
       "images": [
@@ -3024,6 +3008,21 @@
       "discountPrice": null,
       "stars": 65,
       "category": "Women's-Shoes"
+    },
+    {
+      "id": 9,
+      "images": [
+        "/assets/flashsales/chair.png",
+        "/assets/flashsales/chair.png",
+        "/assets/flashsales/chair.png",
+        "/assets/flashsales/chair.png"
+      ],
+      "name": "S-Series Comfort Chair ",
+      "price": 400,
+      "discountPercentage": 25,
+      "discountPrice": 375,
+      "stars": 99,
+      "category": "furniture"
     }
   ],
 

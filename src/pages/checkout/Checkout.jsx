@@ -48,7 +48,7 @@ const Checkout = () => {
     // 1. Ro'yhatdan o'tganlikni tekshirish
     const currentUser = JSON.parse(localStorage.getItem("user"));
     if (!currentUser) {
-      toast.error("Iltimos, avval ro‘yxatdan o‘ting!", {
+      toast.error("Please register first!", {
         position: "top-center",
       });
       return;
@@ -56,18 +56,17 @@ const Checkout = () => {
 
     const { firstname, street, city, phone, email } = form;
     if (!firstname || !street || !city || !phone || !email) {
-      toast.error("Bo'sh maydonlarni to'ldiring!", { position: "top-center" });
+      toast.error("Fill in the blanks!", { position: "top-center" });
       return;
     }
 
     if (!paymentMethod) {
-      toast.error("Iltimos, to‘lov turini tanlang!", {
+      toast.error("Please select a payment type!", {
         position: "top-center",
       });
       return;
     }
 
-    // 📦 Buyurtma ma'lumotlarini saqlash
     const order = {
       cartItems,
       form,
@@ -124,14 +123,14 @@ const Checkout = () => {
               onChange={(e) => setPaymentMethod(e.target.value)}
               required
             >
-              <option value="">Tanlang</option>
+              <option value="">Select</option>
               <option value="Uzcard">Uzcard</option>
               <option value="Humo">Humo</option>
               <option value="Visa">Visa</option>
               <option value="MasterCard">MasterCard</option>
               <option value="Click">Click</option>
               <option value="Payme">Payme</option>
-              <option value="Naqd">Olganda naqd to‘lash</option>
+              <option value="Naqd">Cash on delivery</option>
             </select>
           </div>
 
@@ -199,7 +198,7 @@ const Checkout = () => {
               type="button"
               onClick={() => {
                 if (cartItems.length === 0) {
-                  toast.error("Mahsulot yo‘q – kuponni qo‘llab bo‘lmaydi!", {
+                  toast.error("No product - coupon cannot be used!", {
                     position: "top-center",
                   });
                   return;
@@ -209,13 +208,13 @@ const Checkout = () => {
                 if (code === "SALE10") {
                   localStorage.setItem("discount", 10);
                   setDiscount(10);
-                  toast.success("10% chegirma qo‘llandi!", {
+                  toast.success("10% discount applied!", {
                     position: "top-center",
                   });
                 } else if (code === "SALE20") {
                   localStorage.setItem("discount", 20);
                   setDiscount(20);
-                  toast.success("20% chegirma qo‘llandi!", {
+                  toast.success("20% discount applied!", {
                     position: "top-center",
                   });
                 } else {
